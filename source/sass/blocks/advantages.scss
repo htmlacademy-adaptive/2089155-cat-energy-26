@@ -12,7 +12,7 @@
 .advantages__list {
   margin-top: 40px;
   padding: 0;
-  font-family: 'Arial';
+  font-family: "Arial";
   color: #444444;
   list-style-type: none;
 }
@@ -20,25 +20,10 @@
 .advantages__item p{
   margin: 0;
   padding-bottom: 26px;
-  padding-left: 80px;
+  display: flex;
 }
 
-.advantages__item-first {
-  background-image: url(/img/advantages-group/advantages-group-1.svg);
-  background-repeat: no-repeat;
+.advantages__item-icon {
+  margin-right: 20px;
 }
 
-.advantages__item-second {
-  background-image: url(/img/advantages-group/advantages-group-2.svg);
-  background-repeat: no-repeat;
-}
-
-.advantages__item-third {
-background-image: url(/img/advantages-group/advantages-group-3.svg);
-background-repeat: no-repeat;
-}
-
-.advantages__item-fourth {
-background-image: url(/img/advantages-group/advantages-group-4.svg);
-background-repeat: no-repeat;
-}

@@ -1,6 +1,7 @@
 .example__wrapper {
   margin: 0;
-  padding: 25px 20px 48px;
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
 }
 
 .example__title {
@@ -13,7 +14,7 @@
 .example__description {
   margin: 0;
   margin-bottom: 20px;
-  font-family: 'Arial';
+  font-family: "Arial";
   color: #444444;
 }
 
@@ -26,19 +27,22 @@
   margin: 0;
   padding: 0;
   min-width: 124px;
-  border: 1px solid #CDCDCD;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
-}
-
-.example__weight {
-  padding: 0 14px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  color: #444444;
+  position: relative;
 }
 
 .example__time {
+  width: 87px;
+  height: 29px;
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  background-color: #eaeaea;
+}
+
+.example__heading {
   padding: 0 14px;
   font-size: 12px;
   line-height: 12px;
@@ -48,28 +52,16 @@
 
 .example__number {
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 14px;
-  text-align: center;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.example__day {
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 14px;
+  padding: 0;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
 }
 
 .example__price {
-  margin: 20px 0 40px;
+  margin: 34px 0 20px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
-
-
