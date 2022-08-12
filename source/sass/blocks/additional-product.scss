@@ -14,12 +14,13 @@
 .additional-product__list {
   margin: 0;
   padding: 0;
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional-product__item {
   padding: 0;
   list-style-type: none;
-  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional-product__link {
@@ -27,6 +28,7 @@
 }
 
 .additional-product__heading {
+  margin: 13px 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -49,4 +51,32 @@
   font-size: 16px;
   line-height: 20px;
   background-color: #68b738;
+}
+
+.additional-product__description,
+.additional-product__price {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.additional-product__index {
+  margin: 0;
+  margin-top: 35px;
+  height: 290px;
+  background-image: url(/img/gift.svg),
+    url(/img/backpack.jpg);
+  background-repeat: no-repeat;
+  background-position: top 60px center, top 0 center;
+
+}
+
+.additional-product__gift {
+  margin: 0;
+  padding: 187px 61px 43px 58px;
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-top: 1px solid #cdcdcd;
 }

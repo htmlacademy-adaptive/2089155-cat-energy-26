@@ -38,46 +38,51 @@
     <h1 class="visually-hidden">Анкета</h1>
     <section class="programs">
       <div class="programs__wrapper">
+        <div class="programs__name">
         <h2 class="programs__heading">
           Подбор программы
         </h2>
         <p class="programs__text">
-          Заполните анкету, и мы подберем
+          Заполните анкету, и мы подберем<br>
           программу питания для вашего кота
         </p>
+      </div>
         <form class="programs__form form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="form__label" for="name">
               Имя:*</label>
-            <input class="form__input" type="text" id="name" name="name" required value="Барсик">
+            <input class="form__input form__input--name" type="text" id="name" name="name" required value="Барсик">
           </p>
           <p>
             <label class="form__label" for="weight">
               Вес (кг):*</label>
-            <input class="form__input" type="text" id="weight" name="weight" required value="7">
+            <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
           </p>
           <p>
             <label class="form__label" for="age">
-              Возраст (лет)</label>
-            <input class="form__input" type="text" id="age" name="age" value="7">
+              Возраст (лет):</label>
+            <input class="form__input form__input--age" type="text" id="age" name="age" value="7">
           </p>
         </form>
         <ul class="form__list">
           <li class="form__item form__item--checked">
             <label class="form__label-radio">
-              <input class="form__input" type="radio" name="program" checked>
+              <input class="visually-hidden form__input-radio" type="radio" name="program" checked>
+              <span class="form__mark"></span>
               <span class="form__title">Похудение</span>
             </label>
           </li>
           <li class="form__item form__item--checked">
             <label class="form__label-radio">
-              <input class="form__input" type="radio" name="program">
+              <input class="visually-hidden form__input-radio" type="radio" name="program">
+              <span class="form__mark"></span>
               <span class="form__title">Набор массы</span>
             </label>
           </li>
           <li class="form__item form__item--checked">
             <label class="form__label-radio">
-              <input class="form__input" type="radio" name="program">
+              <input class="visually-hidden form__input-radio" type="radio" name="program">
+              <span class="form__mark"></span>
               <span class="form__title">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
@@ -87,16 +92,16 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+        <h2 class="contacts__title">Контактные данные<br> (владельца кота)</h2>
         <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label for="contacts__label" for="email">Email:*</label>
-            <input class="contacts__input" type="email" name="newsletter-email" id="email" value="kuklachev@gmail.com"
+            <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email" value="kuklachev@gmail.com"
               required>
           </p>
           <p>
             <label for="contacts__label" for="tel">Телефон:*</label>
-            <input class="contacts__input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90" required>
+            <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel" value="8 (960) 900-60-90" required>
           </p>
         </form>
       </div>
@@ -121,25 +126,29 @@
         <ul class="meta__list">
           <li class="meta__item meta__item--checked">
             <label class="meta__checkbox">
-              <input class="meta__input" type="checkbox" name="meta" checked>
+              <input class="visually-hidden meta__input" type="checkbox" name="meta" checked>
+              <span class="meta__mark"></span>
               <span class="meta__label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="meta__item meta__item--checked">
             <label class="meta__checkbox">
-              <input class="meta__input" type="checkbox" name="meta">
+              <input class="visually-hidden meta__input" type="checkbox" name="meta">
+              <span class="meta__mark"></span>
               <span class="meta__label">Питьевая вода</span>
             </label>
           </li>
           <li class="meta__item meta__item--checked">
             <label class="meta__checkbox">
-              <input class="meta__input" type="checkbox" name="meta">
+              <input class="visually-hidden meta__input" type="checkbox" name="meta">
+              <span class="meta__mark"></span>
               <span class="meta__label">Молоко</span>
             </label>
           </li>
           <li class="meta__item meta__item--checked">
             <label class="meta__checkbox">
-              <input class="meta__input" type="checkbox" name="meta">
+              <input class="visually-hidden meta__input" type="checkbox" name="meta">
+              <span class="meta__mark"></span>
               <span class="meta__label">Витамины</span>
             </label>
           </li>
@@ -153,7 +162,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts-info">
-        <div class="contacts-info__text">
+        <div class="contacts-info__text-catalog">
           <p class="contacts-info__slogan"><b>Приглашаем к сотрудничеству дилеров!</b></p>
           <p class="contacts-info__address">ул. Большая
             Конюшенная, д. 19/8

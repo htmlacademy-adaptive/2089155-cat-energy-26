@@ -1,0 +1,42 @@
+.contacts__wrapper {
+  margin: 0;
+  padding: 26px 20px 10px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.contacts__label {
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.contacts__input {
+  margin-left: 10px;
+  padding: 13px 15px;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #cdcdcd;
+}
+
+.contacts__input--email {
+  min-width: 202px;
+  background-image: url(/img/letter.svg);
+  background-repeat: no-repeat;
+  background-position: top 15px left 197px;
+}
+
+.contacts__input--phone {
+  min-width: 186px;
+  background-image: url(/img/phone.svg);
+  background-repeat: no-repeat;
+  background-position: top 12px left 180px;
+}
