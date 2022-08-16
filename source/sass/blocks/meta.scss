@@ -6,9 +6,10 @@
 .meta__title {
   margin: 0;
   margin-bottom: 34px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $color-black;
 }
 
 .meta__list {
@@ -22,7 +23,7 @@
   display: block;
   padding: 10px 0 15px 45px;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-black;
 }
 
 .meta__mark {
@@ -31,7 +32,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-dark-grey;
 }
 
 .meta__input[type="checkbox"]:checked+.meta__mark {
@@ -48,15 +49,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: $color-green;
 }
 
 .meta__textarea {
   margin: 0;
   padding: 0;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: #000000;
+  color: $color-black;
 }

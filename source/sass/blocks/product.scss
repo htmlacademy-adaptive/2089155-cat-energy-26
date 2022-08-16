@@ -7,7 +7,7 @@
   padding: 19px 20px 25px;
   display: grid;
   grid-template-columns: 150px 130px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid $color-light-grey;
 }
 
 .product__link {
@@ -15,7 +15,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #222222;
+  color: $color-special-dark-grey;
 }
 
 .product__image {
@@ -24,6 +24,9 @@
 
 .product__title {
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .product-container__list {
@@ -36,7 +39,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 65px 65px;
-  font-family: 'Arial';
+  font-family:"Arial",sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
@@ -53,42 +56,40 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #68B738;
+  background-color: $color-green;
 }
 
 .product__button {
   padding: 25px 20px;
-  border-top:  1px solid #ebebeb;
-  border-bottom:  1px solid #ebebeb;
+  text-align: center;
+  border-top:  1px solid $color-light-grey;
+  border-bottom:  1px solid $color-light-grey;
 }
 
-.product__button-toggle {
+.product__button-load-more {
   width: 30px;
   height: 30px;
-  margin-left: 120px;
   padding: 0;
   background-image: url(/img/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .product__card {
   margin: 23px 0 8px;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-black-text;
 }
 
 .product__text {
   margin-bottom: 21px;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
-  color: #444444;
+  color: $color-dark-grey;
 }
 
 .product__button-to-all {
@@ -100,6 +101,6 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $color-dark-grey;
+  background-color: $color-grey;
 }

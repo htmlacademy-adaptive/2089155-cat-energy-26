@@ -3,32 +3,6 @@
   padding: 0 20px 20px;
 }
 
-.program__header {
-  min-height: 392px;
-  color: #ffffff;
-}
-
-.program__heading {
-  text-align: center;
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.program__slogan {
-  text-align: center;
-  line-height: 14px;
-}
-
-.program__toggle {
-  display: block;
-  margin-top: 330px;
-  padding: 7px 0;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #68b738;
-}
-
 .program__list {
   margin: 0;
   padding: 0;
@@ -38,7 +12,7 @@
 .program__item {
   margin-top: 20px;
   padding: 24px 20px 22px;
-  background-color: #f2f2f2;
+  background-color: $color-grey;
 }
 
 .program__item--cat-sitting {
@@ -56,15 +30,16 @@
 .program__title {
   margin: 0;
   margin-left: 91px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .program__description {
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   margin: 29px 0 0;
-  color: #444444;
+  color: $color-dark-grey;
 }
 
 .program__product-link {
@@ -73,7 +48,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-black;
   background-image: url(/img/right-arrow.svg);
   background-repeat: no-repeat;
   background-position: top 24px left 100px;
@@ -82,5 +57,5 @@
 .program__description + .program__product-link {
   margin-top: 19px;
   padding-top: 23px;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $color-border-grey;
 }

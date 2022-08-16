@@ -9,11 +9,11 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo-icon" src="img/logo-mobile.svg" width="34" height="38" alt="Кот.">
       <img class="main-header__logo-text" src="img/logo-cat-energy.svg" width="101" height="18" alt="CAT ENERGY.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-navigation site-navigation--close">
         <li class="site-navigation__item">
@@ -34,7 +34,7 @@
     </nav>
   </header>
 
-  <main class="main-container-form">
+  <main class="page__main-form">
     <h1 class="visually-hidden">Анкета</h1>
     <section class="programs">
       <div class="programs__wrapper">
@@ -113,7 +113,7 @@
         <form class="comments__form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="visually-hidden" for="comment">Текст комментария</label>
-            <textarea class="comment__textarea" name="comment" id="comment"
+            <textarea class="comments__textarea" name="comment" id="comment"
               rows="7">Расскажите обо всех повадках кота</textarea>
           </p>
         </form>
@@ -163,7 +163,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts-info">
         <div class="contacts-info__text-catalog">
-          <p class="contacts-info__slogan"><b>Приглашаем к сотрудничеству дилеров!</b></p>
+          <p class="contacts-info__slogan">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts-info__address">ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
@@ -172,7 +172,7 @@
       </div>
       <div class="main-footer__container">
         <div class="main-footer__logo logo-footer">
-          <a class="logo-footer__link" href="#">
+          <a class="logo-footer__link" href="index.html">
             <img class="logo-footer__icon" src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
           </a>
         </div>

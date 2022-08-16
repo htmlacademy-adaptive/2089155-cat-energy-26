@@ -9,11 +9,11 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo-icon" src="img/logo-mobile.svg" width="34" height="38" alt="Кот.">
       <img class="main-header__logo-text" src="img/logo-cat-energy.svg" width="101" height="18" alt="CAT ENERGY.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-navigation site-navigation--close">
         <li class="site-navigation__item">
@@ -34,11 +34,13 @@
     </nav>
   </header>
 
-  <main class="main-container-catalog">
+  <main class="page__main-catalog">
     <h1 class="visually-hidden">Страница каталог</h1>
     <section class="catalog">
       <div class="catalog-wrapper">
-        <h2 class="catalog__title">Каталог продукции</h2>
+        <div class="catalog__title-wrapper">
+          <h2 class="catalog__title">Каталог продукции</h2>
+        </div>
         <ul class="catalog__list product">
           <li class="product__item">
             <img class="product__image" src="img/catalog-product/catalog-1.jpg" alt="Товар 1.">
@@ -189,7 +191,7 @@
           </li>
         </ul>
         <div class="product__button">
-          <button class="product__button-toggle" type="button"><span class="visually-hidden">Показать еще
+          <button class="product__button-load-more" type="button"><span class="visually-hidden">Показать еще
               продукты</span></button>
           <p class="product__card">Показать еще 100500 товаров</p>
           <p class="product__text">На самом деле вкусов гораздо больше!</p>
@@ -256,7 +258,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts-info">
         <div class="contacts-info__text-catalog">
-          <p class="contacts-info__slogan"><b>Приглашаем к сотрудничеству дилеров!</b></p>
+          <p class="contacts-info__slogan">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts-info__address">ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
@@ -265,7 +267,7 @@
       </div>
       <div class="main-footer__container">
         <div class="main-footer__logo logo-footer">
-          <a class="logo-footer__link" href="#">
+          <a class="logo-footer__link" href="index.html">
             <img class="logo-footer__icon" src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
           </a>
         </div>

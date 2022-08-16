@@ -1,7 +1,7 @@
 .example__wrapper {
   margin: 0;
   padding: 25px 20px 40px;
-  background-color: #eaeaea;
+  background-color: $color-index-grey;
 }
 
 .example__title {
@@ -9,13 +9,14 @@
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .example__description {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Arial";
-  color: #444444;
+  font-family: "Arial",sans-serif;
+  color: $color-dark-grey;
 }
 
 .example__index {
@@ -28,7 +29,7 @@
   padding: 0;
   min-width: 124px;
   min-height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-border-dark-grey;
   border-radius: 3px;
   position: relative;
 }
@@ -39,15 +40,17 @@
   position: absolute;
   top: 42px;
   left: 20px;
-  background-color: #eaeaea;
+  background-color: $color-index-grey;
 }
 
 .example__heading {
   padding: 0 14px;
+  font-family: "Arial",sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: #444444;
+  color: $color-dark-grey;
 }
 
 .example__number {

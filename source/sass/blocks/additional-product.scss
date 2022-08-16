@@ -6,21 +6,22 @@
 .additional-product__title {
   margin: 0;
   margin-bottom: 36px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $color-black;
 }
 
 .additional-product__list {
   margin: 0;
   padding: 0;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $color-border-dark-grey;
 }
 
 .additional-product__item {
   padding: 0;
   list-style-type: none;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $color-border-dark-grey;
 }
 
 .additional-product__link {
@@ -29,19 +30,20 @@
 
 .additional-product__heading {
   margin: 13px 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #222222;
+  color: $color-special-dark-grey;
 }
 
 .additional-product__container {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $color-dark-grey;
 }
 
 .additional-product__toggle {
@@ -50,7 +52,7 @@
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
-  background-color: #68b738;
+  background-color: $color-green;
 }
 
 .additional-product__description,
@@ -67,16 +69,15 @@
     url(/img/backpack.jpg);
   background-repeat: no-repeat;
   background-position: top 60px center, top 0 center;
-
 }
 
 .additional-product__gift {
   margin: 0;
   padding: 187px 61px 43px 58px;
-  font-family: "Arial";
+  font-family: "Arial",sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
-  border-top: 1px solid #cdcdcd;
+  color: $color-white;
+  border-top: 1px solid $color-border-dark-grey;
 }
