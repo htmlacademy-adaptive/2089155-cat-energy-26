@@ -1,0 +1,19 @@
+.main-header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 17px;
+}
+
+.main-header__logo-text {
+  margin: 13px 0 6px 56px;
+}
+
+.main-nav__toggle {
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-white;
+}

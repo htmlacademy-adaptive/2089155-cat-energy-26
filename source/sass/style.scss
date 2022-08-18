@@ -1,1 +1,46 @@
 // Начните писать стили здесь
+
+@import "./fonts.scss";
+@import "./color.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-heder.scss";
+@import "./blocks/site-navigation.scss";
+@import "./blocks/program-advertisement.scss";
+@import "./blocks/program.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/form.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/comments.scss";
+@import "./blocks/meta.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}

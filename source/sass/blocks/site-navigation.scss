@@ -1,0 +1,33 @@
+.site-navigation {
+  position: absolute;
+  top: 54px;
+  left: 0px;
+  z-index: 1;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  background-color: $color-white;
+  min-height: 198px;
+}
+
+.site-navigation__item {
+  padding: 22px 0 24px;
+  text-align: center;
+  list-style-type: none;
+  border-top: 1px solid $color-border-navigation;
+}
+
+.site-navigation__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+
+}
+
+.site-navigation--close {
+  display: none;
+}
