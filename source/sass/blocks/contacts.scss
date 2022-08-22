@@ -3,6 +3,20 @@
   padding: 26px 20px 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__wrapper {
+    margin: 0;
+    padding: 75px 65px 0 71px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__wrapper {
+    margin: 0;
+    padding: 69px 110px 0;
+  }
+}
+
 .contacts__title {
   margin: 0;
   margin-bottom: 35px;
@@ -10,6 +24,20 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    margin: 0;
+    margin-bottom: 76px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__form {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__label {

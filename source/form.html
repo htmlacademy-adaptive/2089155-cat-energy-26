@@ -40,54 +40,56 @@
     <section class="programs">
       <div class="programs__wrapper">
         <div class="programs__name">
-        <h2 class="programs__heading">
-          Подбор программы
-        </h2>
-        <p class="programs__text">
-          Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота
-        </p>
-      </div>
-        <form class="programs__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
-            <label class="form__label" for="name">
-              Имя:*</label>
-            <input class="form__input form__input--name" type="text" id="name" name="name" required value="Барсик">
+          <h2 class="programs__heading">
+            Подбор программы
+          </h2>
+          <p class="programs__text">
+            Заполните анкету, и мы подберем<br>
+            программу питания для вашего кота
           </p>
-          <p>
-            <label class="form__label" for="weight">
-              Вес (кг):*</label>
-            <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
-          </p>
-          <p>
-            <label class="form__label" for="age">
-              Возраст (лет):</label>
-            <input class="form__input form__input--age" type="text" id="age" name="age" value="7">
-          </p>
-        </form>
-        <ul class="form__list">
-          <li class="form__item form__item--checked">
-            <label class="form__label-radio">
-              <input class="visually-hidden form__input-radio" type="radio" name="program" checked>
-              <span class="form__mark"></span>
-              <span class="form__title">Похудение</span>
-            </label>
-          </li>
-          <li class="form__item form__item--checked">
-            <label class="form__label-radio">
-              <input class="visually-hidden form__input-radio" type="radio" name="program">
-              <span class="form__mark"></span>
-              <span class="form__title">Набор массы</span>
-            </label>
-          </li>
-          <li class="form__item form__item--checked">
-            <label class="form__label-radio">
-              <input class="visually-hidden form__input-radio" type="radio" name="program">
-              <span class="form__mark"></span>
-              <span class="form__title">Не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
+        </div>
+        <div class="programs__index">
+          <form class="programs__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+              <label class="form__label" for="name">
+                Имя:*</label>
+              <input class="form__input form__input--name" type="text" id="name" name="name" required value="Барсик">
+            </p>
+            <p>
+              <label class="form__label" for="weight">
+                Вес (кг):*</label>
+              <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
+            </p>
+            <p>
+              <label class="form__label" for="age">
+                Возраст (лет):</label>
+              <input class="form__input form__input--age" type="text" id="age" name="age" value="7">
+            </p>
+          </form>
+          <ul class="form__list">
+            <li class="form__item form__item--checked">
+              <label class="form__label-radio">
+                <input class="visually-hidden form__input-radio" type="radio" name="program" checked>
+                <span class="form__mark"></span>
+                <span class="form__title">Похудение</span>
+              </label>
+            </li>
+            <li class="form__item form__item--checked">
+              <label class="form__label-radio">
+                <input class="visually-hidden form__input-radio" type="radio" name="program">
+                <span class="form__mark"></span>
+                <span class="form__title">Набор массы</span>
+              </label>
+            </li>
+            <li class="form__item form__item--checked">
+              <label class="form__label-radio">
+                <input class="visually-hidden form__input-radio" type="radio" name="program">
+                <span class="form__mark"></span>
+                <span class="form__title">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -97,12 +99,13 @@
         <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label for="contacts__label" for="email">Email:*</label>
-            <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email" value="kuklachev@gmail.com"
-              required>
+            <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email"
+              value="kuklachev@gmail.com" required>
           </p>
           <p>
             <label for="contacts__label" for="tel">Телефон:*</label>
-            <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel" value="8 (960) 900-60-90" required>
+            <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel"
+              value="8 (960) 900-60-90" required>
           </p>
         </form>
       </div>
@@ -153,9 +156,13 @@
               <span class="meta__label">Витамины</span>
             </label>
           </li>
+          <li class="meta__item button">
+            <button class="meta__button button" type="submit">Отправить заявку</button>
+          </li>
+          <li class="meta__item meta__textarea">
+            <p class="meta__textarea">* __ Обязательные поля</p>
+          </li>
         </ul>
-        <button class="meta__button button" type="submit">Отправить заявку</button>
-        <p class="meta__textarea">* __ Обязательные поля</p>
       </div>
     </section>
   </main>
