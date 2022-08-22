@@ -1,6 +1,23 @@
 .additional-product__wrapper {
   margin: 0;
   padding: 25px 20px 35px;
+  border-top:  1px solid $color-light-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .additional-product__wrapper {
+    margin: 0;
+    padding: 68px 30px 76px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__wrapper {
+    margin: 0;
+    padding: 75px 110px 86px;
+    border: none;
+  }
 }
 
 .additional-product__title {
@@ -12,16 +29,62 @@
   color: $color-black;
 }
 
+@media screen and (min-width: 768px) {
+  .additional-product__title {
+    margin: 0;
+    margin-bottom: 80px;
+  }
+}
+
 .additional-product__list {
   margin: 0;
   padding: 0;
   border-top: 1px solid $color-border-dark-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .additional-product__list {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $color-border-dark-grey;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__list {
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional-product__item {
   padding: 0;
   list-style-type: none;
   border-bottom: 1px solid $color-border-dark-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .additional-product__item {
+    padding: 26px 38px 28px;
+    min-width: 632px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__item {
+    padding: 25px 0 27px;
+    min-width: 895px;
+    display: flex;
+  }
 }
 
 .additional-product__link {
@@ -71,6 +134,21 @@
   background-position: top 60px center, top 0 center;
 }
 
+@media screen and (min-width: 768px) {
+  .additional-product__index {
+    width: 100%;
+    margin-top: 69px;
+    background-color: $color-green;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__index {
+    width: 244px;
+  }
+}
+
+
 .additional-product__gift {
   margin: 0;
   padding: 187px 61px 43px 58px;
@@ -79,5 +157,4 @@
   line-height: 20px;
   text-align: center;
   color: $color-white;
-  border-top: 1px solid $color-border-dark-grey;
 }
