@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -40,7 +41,7 @@
       <div class="program-advertisement__wrapper">
         <header class="program-advertisement__header">
           <h2 class="program-advertisement__heading">
-            Функциональное
+            Функциональное<br>
             питание для котов
           </h2>
           <p class="program-advertisement__slogan">
@@ -119,31 +120,36 @@
     <section class="example">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
+      </div>
+      <div class="example__wrapper--color">
         <p class="example__description">Борис сбросил 5 кг за 2 месяца,
           просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__index">
-          <div class="example__result">
-            <h3 class="example__heading"><span class="example__time">снижение<br> веса</span></h3>
-            <p class="example__number">5 КГ</p>
+        <div class="example__tablet">
+          <div class="example__index">
+            <div class="example__result">
+              <h3 class="example__heading"><span class="example__time">снижение<br> веса</span></h3>
+              <p class="example__number">5 КГ</p>
+            </div>
+            <div class="example__result">
+              <h3 class="example__heading"><span class="example__time">затрачено<br> времени</span></h3>
+              <p class="example__number">60 ДНЕЙ</p>
+            </div>
           </div>
-          <div class="example__result">
-            <h3 class="example__heading"><span class="example__time">затрачено<br> времени</span></h3>
-            <p class="example__number">60 ДНЕЙ</p>
-          </div>
+          <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
         </div>
-        <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-        <div class="example__gallery slider">
-          <img class="slider__image slider__image--fat" src="/img/slider/cat-fat.png" width="138" height="256"
-            alt="Толстый кот.">
-          <img class="slider__image slider__image--skinny" src="/img/slider/cat-skinny.png" width="138" height="256"
-            alt="Худой кот.">
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-        </div>
+      </div>
+      <div class="example__gallery slider">
+        <img class="slider__image slider__image--fat" src="/img/slider/cat-fat.png" width="138" height="256"
+          alt="Толстый кот.">
+        <img class="slider__image slider__image--skinny" src="/img/slider/cat-skinny.png" width="138" height="256"
+          alt="Худой кот.">
+        <button class="slider__button" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+      </div>
       </div>
     </section>
   </main>
