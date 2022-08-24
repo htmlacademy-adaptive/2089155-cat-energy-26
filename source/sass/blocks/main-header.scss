@@ -31,13 +31,66 @@
   align-self: center;
 }
 
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
   width: 40px;
   height: 40px;
+  border: none;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
   background-image: url("/img/burger-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-white;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav--closed .site-navigation__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 7px;
+    width: 26px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
