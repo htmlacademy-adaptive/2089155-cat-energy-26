@@ -18,7 +18,7 @@
 
 .form__input {
   padding: 13px 16px;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -78,11 +78,11 @@
   left: 0;
   width: 30px;
   height: 30px;
-  border:  1px solid $color-border-dark-grey;
+  border: 1px solid $color-border-dark-grey;
   border-radius: 50%;
 }
 
-.form__input-radio[type="radio"]:checked + .form__mark::before {
+.form__input-radio[type="radio"]:checked+.form__mark::before {
   position: absolute;
   top: 8px;
   left: 8px;

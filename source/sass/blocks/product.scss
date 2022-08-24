@@ -79,7 +79,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 65px 65px;
-  font-family:"Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
@@ -110,7 +110,7 @@
   height: 30px;
   margin-top: 5px;
   padding: 0;
-  background-image: url(/img/plus.svg);
+  background-image: url("/img/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $color-white;
@@ -126,7 +126,7 @@
 
 .product__text {
   margin-bottom: 21px;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $color-dark-grey;

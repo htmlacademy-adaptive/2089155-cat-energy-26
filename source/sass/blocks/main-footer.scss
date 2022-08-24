@@ -136,22 +136,22 @@
   color: $color-dark-grey;
 }
 
-.logo-footer+.social {
+.logo-footer + .social {
   border-top: 1px solid $color-border-grey;
 }
 
 @media screen and (min-width: 768px) {
-  .logo-footer+.social {
+  .logo-footer + .social {
     border: none;
   }
 }
 
-.social+.copyright {
+.social + .copyright {
   border-top: 1px solid $color-border-grey;
 }
 
 @media screen and (min-width: 768px) {
-  .social+.copyright {
+  .social + .copyright {
     border: none;
   }
 }

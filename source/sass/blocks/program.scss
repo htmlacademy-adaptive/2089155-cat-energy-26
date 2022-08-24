@@ -53,13 +53,13 @@
 }
 
 .program__item--cat-sitting {
-  background-image: url(/img/cat_back-2.svg);
+  background-image: url("/img/cat_back-2.svg");
   background-repeat: no-repeat;
   background-position: top 21px left 22px;
 }
 
-.program__item--walking-cat{
-  background-image: url(/img/cat_back-1.svg);
+.program__item--walking-cat {
+  background-image: url("/img/cat_back-1.svg");
   background-repeat: no-repeat;
   background-position: top 24px left 13px;
 }
@@ -74,7 +74,7 @@
 }
 
 .program__description {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 29px 0 0;
   color: $color-dark-grey;
 }
@@ -86,7 +86,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-black;
-  background-image: url(/img/right-arrow.svg);
+  background-image: url("/img/right-arrow.svg");
   background-repeat: no-repeat;
   background-position: top 24px left 100px;
 }

@@ -78,7 +78,7 @@
 
 .meta__input[type="checkbox"]:checked+.meta__mark {
   position: absolute;
-  background-image: url(/img/check-mark.svg);
+  background-image: url("/img/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -102,7 +102,7 @@
 .meta__textarea {
   margin: 0;
   padding: 0;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

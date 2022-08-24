@@ -48,7 +48,7 @@
 .contacts__input {
   margin-left: 10px;
   padding: 13px 15px;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -58,14 +58,14 @@
 
 .contacts__input--email {
   min-width: 198px;
-  background-image: url(/img/letter.svg);
+  background-image: url("/img/letter.svg");
   background-repeat: no-repeat;
   background-position: top 15px left 197px;
 }
 
 .contacts__input--phone {
   min-width: 182px;
-  background-image: url(/img/phone.svg);
+  background-image: url("/img/phone.svg");
   background-repeat: no-repeat;
   background-position: top 12px left 180px;
 }
