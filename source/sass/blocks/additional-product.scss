@@ -1,7 +1,7 @@
 .additional-product__wrapper {
   margin: 0;
   padding: 25px 20px 35px;
-  border-top:  1px solid $color-light-grey;
+  border-top: 1px solid $color-light-grey;
 }
 
 @media screen and (min-width: 768px) {
@@ -103,7 +103,7 @@
 .additional-product__container {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $color-dark-grey;
@@ -138,20 +138,22 @@
   .additional-product__index {
     width: 100%;
     margin-top: 69px;
+    max-height: 200px;
     background-color: $color-green;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .additional-product__index {
-    width: 244px;
+    max-width: 244px;
+    max-height: 288px;
   }
 }
 
 .additional-product__gift {
   margin: 0;
   padding: 187px 61px 43px 58px;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;

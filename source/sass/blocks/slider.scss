@@ -6,7 +6,19 @@
   background-color: $color-index-grey;
 }
 
-.slider__image--fat + .slider__image--skinny {
+@media screen and (min-width: 768px) {
+  .slider {
+    min-height: 612px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider {
+    min-height: 512px;
+  }
+}
+
+.slider__image--fat+.slider__image--skinny {
   border-left: 4px solid $color-special-grey;
   border-radius: 2px;
 }
@@ -17,7 +29,7 @@
   position: absolute;
   top: 103px;
   left: auto;
-  background-color:  $color-white;
+  background-color: $color-white;
   border: 2px solid $color-special-grey;
   border-radius: 20px;
   background-image: url("/img/slider/button.svg");
