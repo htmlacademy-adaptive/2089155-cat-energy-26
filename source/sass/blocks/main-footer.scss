@@ -5,12 +5,31 @@
   justify-content: space-between;
 }
 
-.contacts-info__text-catalog{
+@media screen and (min-width: 768px) {
+  .contacts-info__text {
+    margin: 0;
+    padding: 60px 70px 56px;
+    display: grid;
+    grid-template-columns: 163px 155px;
+  }
+}
+
+.contacts-info__text-catalog {
   margin: 0;
   padding: 26px 20px;
   display: flex;
   justify-content: space-between;
   background-color: $color-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-info__text-catalog {
+    margin: 0;
+    padding: 60px 70px 56px;
+    display: grid;
+    grid-template-columns: 163px 155px;
+    background-color: $color-grey;
+  }
 }
 
 .contacts-info__slogan {
@@ -23,15 +42,35 @@
 
 .contacts-info__address {
   margin: 0;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-grey;
 }
 
+.contacts-info__image {
+  width: 100%;
+}
+
 .main-footer__container {
   padding: 0 20px;
   background-color: $color-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer__container {
+    margin: 0;
+    padding: 58px 30px 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-footer__container {
+    margin: 0;
+    padding: 50px 110px;
+  }
 }
 
 .logo-footer {
@@ -45,6 +84,12 @@
 
 .logo-footer__icon {
   margin: 39px 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer__icon {
+    margin: 0;
+  }
 }
 
 .social {
@@ -62,7 +107,12 @@
 .social__item {
   display: block;
   padding: 20px 12px 21px;
+}
 
+@media screen and (min-width: 768px) {
+  .social__item {
+    padding: 7px 12px 10px;
+  }
 }
 
 .copyright {
@@ -72,9 +122,16 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .copyright__link-academy {
   margin-top: 8px;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   text-decoration: none;
   color: $color-dark-grey;
 }
@@ -83,6 +140,18 @@
   border-top: 1px solid $color-border-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-footer + .social {
+    border: none;
+  }
+}
+
 .social + .copyright {
   border-top: 1px solid $color-border-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .social + .copyright {
+    border: none;
+  }
 }

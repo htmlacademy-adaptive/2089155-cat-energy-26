@@ -3,8 +3,26 @@
   border-top: 1px solid $color-border-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .catalog-wrapper {
+    border: none;
+  }
+}
+
 .catalog__title-wrapper {
   padding: 23px 41px 41px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog__title-wrapper {
+    padding: 65px 30px 163px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .catalog__title-wrapper {
+    padding: 78px 110px 165px;
+  }
 }
 
 .catalog__title {

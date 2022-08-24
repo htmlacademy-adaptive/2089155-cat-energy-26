@@ -3,7 +3,7 @@
 @import "./fonts.scss";
 @import "./color.scss";
 @import "./blocks/page.scss";
-@import "./blocks/main-heder.scss";
+@import "./blocks/main-header.scss";
 @import "./blocks/site-navigation.scss";
 @import "./blocks/program-advertisement.scss";
 @import "./blocks/program.scss";
@@ -34,7 +34,7 @@
 }
 
 button {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

@@ -3,6 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: $color-index-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    min-height: 612px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider {
+    min-height: 512px;
+  }
 }
 
 .slider__image--fat + .slider__image--skinny {
@@ -16,7 +29,7 @@
   position: absolute;
   top: 103px;
   left: auto;
-  background-color:  $color-white;
+  background-color: $color-white;
   border: 2px solid $color-special-grey;
   border-radius: 20px;
   background-image: url("/img/slider/button.svg");
