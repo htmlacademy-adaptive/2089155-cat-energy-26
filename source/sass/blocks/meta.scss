@@ -76,7 +76,7 @@
   border: 1px solid $color-border-dark-grey;
 }
 
-.meta__input[type="checkbox"]:checked+.meta__mark {
+.meta__input[type="checkbox"]:checked + .meta__mark {
   position: absolute;
   background-image: url("/img/check-mark.svg");
   background-repeat: no-repeat;

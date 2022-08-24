@@ -82,7 +82,7 @@
   border-radius: 50%;
 }
 
-.form__input-radio[type="radio"]:checked+.form__mark::before {
+.form__input-radio[type="radio"]:checked + .form__mark::before {
   position: absolute;
   top: 8px;
   left: 8px;
