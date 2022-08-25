@@ -2,17 +2,56 @@
   margin: 0;
 }
 
+.program-advertisement__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 302px;
+  top: 65px;
+  right: 0;
+  background-image: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    url("/img/background-cat.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .program-advertisement__wrapper::after {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .program-advertisement__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+      url("/img/background-cat-desktop.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
 .program-advertisement__header {
   padding: 27px 20px 0;
   min-height: 392px;
   color: $color-white;
-  background-image: url("/img/background-cat.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
   .program-advertisement__header {
+    min-height: 790px;
     padding: 62px 30px 0 117px;
     background-image: none;
   }
@@ -20,6 +59,7 @@
 
 @media screen and (min-width: 1440px) {
   .program-advertisement__header {
+    min-height: 570px;
     padding: 32px 110px 0 190px;
     background-image: none;
   }
@@ -35,19 +75,15 @@
 
 @media screen and (min-width: 768px) {
   .program-advertisement__heading {
-    text-align: start;
-    color: $color-black;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .program-advertisement__heading {
+    font-size: 60px;
+    line-height: 60px;
     text-align: start;
     color: $color-black;
   }
 }
 
 .program-advertisement__slogan {
+  margin: 25px 0 29px;
   text-transform: uppercase;
   text-align: center;
   line-height: 14px;
@@ -55,15 +91,43 @@
 
 @media screen and (min-width: 768px) {
   .program-advertisement__slogan {
+    margin: 41px 0 20px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: start;
     color: $color-black;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .program-advertisement__heading {
-    text-align: start;
-    color: $color-black;
+  .program-advertisement__slogan {
+    margin: 40px 0 52px;
+  }
+}
+
+.program-advertisement__image {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .program-advertisement__image {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    top: auto;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .program-advertisement__image {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    top: 122px;
+    right: 305px;
+    z-index: -1;
   }
 }
 
@@ -75,10 +139,23 @@
   text-decoration: none;
   color: $color-white;
   background-color: $color-green;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:active {
+    background-color: $color-green-hover;
+    color: rgba($color: $color-white, $alpha: 0.3);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .program-advertisement__toggle {
-    max-width: 244px;
+    max-width: 192px;
+    margin-top: 29px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
