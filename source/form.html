@@ -50,17 +50,17 @@
         </div>
         <div class="programs__index">
           <form class="programs__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <p>
+            <p class="form__mame">
               <label class="form__label" for="name">
                 Имя:*</label>
               <input class="form__input form__input--name" type="text" id="name" name="name" required value="Барсик">
             </p>
-            <p>
+            <p class="form__mame">
               <label class="form__label" for="weight">
                 Вес (кг):*</label>
               <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
             </p>
-            <p>
+            <p class="form__mame">
               <label class="form__label" for="age">
                 Возраст (лет):</label>
               <input class="form__input form__input--age" type="text" id="age" name="age" value="7">
@@ -96,24 +96,27 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контактные данные<br> (владельца кота)</h2>
+      </div>
         <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
-            <label for="contacts__label" for="email">Email:*</label>
+            <svg class="contacts__input-icon--email" width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg"><path stroke="#222" stroke-width="1.3" d="M.65 5.85v8M17.65 5.85v8M0 13.2h18M0 1.2h18M17.35 3.03 9 9.53.65 3.02V1.5h16.7v1.53Z"/></svg>
+            <label class="contacts__label" for="email">Email:*</label>
             <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email"
               value="kuklachev@gmail.com" required>
           </p>
           <p>
-            <label for="contacts__label" for="tel">Телефон:*</label>
+            <label class="contacts__label" for="tel">Телефон:*</label>
             <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel"
               value="8 (960) 900-60-90" required>
+              <svg class="contacts__input-icon--phone" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/></g><defs><clipPath id="a"><path  transform="translate(0 .32)" d="M0 0h20v20.07H0z"/></clipPath></defs></svg>
           </p>
         </form>
-      </div>
     </section>
 
     <section class="comments">
       <div class="comments__wrapper">
         <h2 class="comments__title">Комментарий</h2>
+      </div>
         <form class="comments__form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="visually-hidden" for="comment">Текст комментария</label>
@@ -121,12 +124,13 @@
               rows="7">Расскажите обо всех повадках кота</textarea>
           </p>
         </form>
-      </div>
     </section>
 
     <section class="meta">
       <div class="meta__wrapper">
         <h2 class="meta__title">Дополнительно</h2>
+      </div>
+      <div class="meta__wrapper-index">
         <ul class="meta__list">
           <li class="meta__item meta__item--checked">
             <label class="meta__checkbox">
