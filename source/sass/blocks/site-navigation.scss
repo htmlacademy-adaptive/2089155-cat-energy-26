@@ -96,6 +96,16 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .site-navigation__item-catalog--current {
+    position: relative;
+
+    &::after {
+      background-color: $color-green;
+    }
+  }
+}
+
 .site-navigation__link {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -117,5 +127,11 @@
 @media screen and (min-width: 1440px) {
   .site-navigation__link {
     color: $color-white;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-navigation__link-catalog {
+    color: $color-black;
   }
 }

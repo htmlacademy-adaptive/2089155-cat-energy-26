@@ -33,17 +33,19 @@
 @media screen and (min-width: 768px) {
   .product__item {
     width: 246px;
+    margin-top: 141px;
     padding: 39px 37px;
     display: flex;
     flex-direction: column;
     border: none;
+    background-color: $color-grey;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .product__item {
     width: 171px;
-    padding: 39px 37px;
+    padding: 0 37px 39px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -69,6 +71,27 @@
   line-height: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .product__title {
+    margin: 34px 0 21px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product__title {
+    margin: 42px 0 20px;
+  }
+}
+
 .product-container__list {
   margin: 0;
   padding-top: 14px;
@@ -77,15 +100,27 @@
 .product-container__item {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 65px 65px;
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
 
-.product-container__description {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .product-container__item {
+    padding: 7px 0 9px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid $color-border-dark-grey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product__item-button {
+    background-color: $color-white;
+    border: 2px solid $color-grey;
+  }
 }
 
 .product__toggle {
@@ -97,6 +132,22 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: $color-green;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:active {
+    background-color: $color-green-hover;
+    color: rgba($color: $color-white, $alpha: 0.3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product__toggle {
+    margin-top: 33px;
+  }
 }
 
 .product__button {
@@ -114,6 +165,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $color-white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .product__button-load-more {
+    width: 60px;
+    height: 60px;
+    margin: 13px 0 49px;
+    background-image: url("/img/plus-desktop.svg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product__button-load-more {
+    margin-top: 51px;
+  }
 }
 
 .product__card {
@@ -124,6 +191,16 @@
   color: $color-black-text;
 }
 
+@media screen and (min-width: 768px) {
+  .product__card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 .product__text {
   margin-bottom: 21px;
   font-family: "Arial", sans-serif;
@@ -132,9 +209,25 @@
   color: $color-dark-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .product__text {
+    margin: 23px 0 127px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product__text {
+    margin: 23px 0 105px;
+  }
+}
+
 .product__button-to-all {
   display: block;
-  margin: 0 0 5px;
+  margin: 0;
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -143,4 +236,14 @@
   text-transform: uppercase;
   color: $color-dark-grey;
   background-color: $color-grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+    color: rgba($color: $color-dark-grey, $alpha: 0.3);
+  }
 }
