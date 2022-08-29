@@ -37,6 +37,18 @@
   text-transform: uppercase;
   color: $color-dark-grey;
   border: 1px solid $color-border-comments;
+
+  &:hover {
+    outline: 1px solid $color-border-dark-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-dark-grey;
+  }
+}
+
+.form__input--error {
+  outline: 2px solid $color-error;
 }
 
 @media screen and (min-width: 768px) {
@@ -165,6 +177,18 @@
   background-color: $color-green;
   border-radius: 50%;
   content: "";
+}
+
+.form__input-radio:focus ~ .form__mark {
+  border: 1px solid $color-radio;
+}
+
+.form__input-radio:hover ~ .form__mark {
+  border: 1px solid $color-radio;
+}
+
+.form__input-radio:disabled ~ .form__mark {
+  opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {

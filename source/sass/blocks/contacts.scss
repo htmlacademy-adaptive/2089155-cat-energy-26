@@ -113,6 +113,18 @@
   text-transform: uppercase;
   color: $color-dark-grey;
   border: 1px solid $color-border-dark-grey;
+
+  &:hover {
+    outline: 1px solid $color-border-dark-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-dark-grey;
+  }
+}
+
+.contacts__input--error {
+  outline: 2px solid $color-error;
 }
 
 @media screen and (min-width: 768px) {
@@ -131,6 +143,15 @@
   position: absolute;
   top: 16px;
   left: 265px;
+  fill: $color-special-dark-grey;
+
+  &:focus {
+    fill: $color-green;
+  }
+}
+
+.contacts__input-icon--email-error {
+  fill: $color-error;
 }
 
 @media screen and (min-width: 768px) {
@@ -167,6 +188,15 @@
   position: absolute;
   top: 72px;
   left: 265px;
+  fill: $color-special-dark-grey;
+
+  &:focus {
+    fill: $color-green;
+  }
+}
+
+.contacts__input-icon--phone-error {
+  fill: $color-error;
 }
 
 @media screen and (min-width: 768px) {

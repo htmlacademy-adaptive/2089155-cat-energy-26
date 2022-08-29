@@ -136,9 +136,21 @@
   background-position: center;
 }
 
+.meta__input:focus ~ .meta__mark {
+  border: 1px solid $color-radio;
+}
+
+.meta__input:hover ~ .meta__mark {
+  border: 1px solid $color-radio;
+}
+
+.meta__input:disabled ~ .meta__mark {
+  opacity: 0.3;
+}
+
 .meta__button {
   margin: 34px 0 31px;
-  padding: 7px;
+  padding: 10px;
   width: 100%;
   font-size: 16px;
   line-height: 20px;
@@ -157,7 +169,7 @@
 
 @media screen and (min-width: 768px) {
   .meta__button {
-    padding: 13px;
+    padding: 16px;
     min-width: 282px;
     font-size: 20px;
     line-height: 20px;
