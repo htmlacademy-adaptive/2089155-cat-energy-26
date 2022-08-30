@@ -29,7 +29,7 @@
 @media screen and (min-width: 768px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 0 30px 100px;
+    padding: 0 36px 100px 30px;
     background-color: $color-white;
   }
 }
@@ -49,9 +49,10 @@
   font-weight: 400;
 }
 
-@media screen and (min-width: 1440px) {
-  .example__color {
-    background-color: $color-index-grey;
+@media screen and (min-width: 768px) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -66,6 +67,8 @@
   .example__description {
     margin: 0;
     margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -85,6 +88,8 @@
 
 @media screen and (min-width: 1440px) {
   .example__tablet {
+    max-width: 400px;
+    flex-wrap: wrap;
     justify-content: start;
   }
 }
@@ -104,6 +109,14 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .example__result {
+    margin-right: 42px;
+    min-width: 162px;
+    min-height: 72px;
+  }
+}
+
 .example__time {
   width: 87px;
   height: 29px;
@@ -113,14 +126,51 @@
   background-color: $color-index-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .example__time {
+    top: 65px;
+    background: $color-white;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .example__time--weight {
+    width: 114px;
+    left: 25px;
+  }
+
+  .example__time--data {
+    width: 142px;
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example__time {
+    background-color: $color-index-grey;
+  }
+}
+
 .example__heading {
-  padding: 0 14px;
+  margin: 12px 0 0 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   color: $color-dark-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .example__heading {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__number {
@@ -131,10 +181,51 @@
   line-height: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .example__price {
   margin: 34px 0 20px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .example__price {
+    margin: 5px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__price-number {
+    margin-top: 9px;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example__price {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: 174px 150px;
+    gap: 42px;
+  }
+
+  .example__price-number {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .example__wrapper--slider {
+    display: flex;
+  }
 }

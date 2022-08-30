@@ -7,6 +7,7 @@
   .advantages__wrapper {
     margin: 0;
     padding: 0 30px 47px;
+    border-bottom: 1px solid $color-border-navigation;
   }
 }
 
@@ -14,6 +15,7 @@
   .advantages__wrapper {
     margin: 0;
     padding: 0 106px 69px 110px;
+    border: none;
   }
 }
 
@@ -49,6 +51,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 247px 247px;
+    counter-reset: advantages-counter;
   }
 }
 
@@ -66,10 +69,32 @@
   }
 }
 
-.advantages__item p {
+.advantages__item {
   margin: 0;
   padding-bottom: 26px;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    padding: 0;
+    min-height: 280px;
+    flex-direction: column;
+    position: relative;
+    counter-increment: advantages-counter;
+  }
+
+  .advantages__item::after {
+    content: counter(advantages-counter);
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $color-grey;
+    z-index: -1;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -81,4 +106,23 @@
 
 .advantages__item-icon {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item-icon {
+    margin: 40px 0 31px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__item-description {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__item-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

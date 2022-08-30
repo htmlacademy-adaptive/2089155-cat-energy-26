@@ -1,40 +1,92 @@
 .contacts__wrapper {
   margin: 0;
-  padding: 26px 20px 10px;
+  padding: 26px 0 21px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .contacts__wrapper {
     margin: 0;
-    padding: 75px 65px 0 71px;
+    padding: 75px 30px 68px 30px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .contacts__wrapper {
     margin: 0;
-    padding: 69px 110px 0;
+    padding: 69px 70px 56px;
+  }
+}
+
+.contacts__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: $color-green;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__wrapper::after {
+    content: "";
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__wrapper::after {
+    content: "";
+    top: 55%;
   }
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 35px;
+  padding: 0 20px;
+  display: inline-block;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
+  background-color: $color-white;
 }
 
 @media screen and (min-width: 768px) {
   .contacts__title {
     margin: 0;
-    margin-bottom: 76px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    padding: 0 40px;
+  }
+}
+
+.contacts__form {
+  padding: 0 20px 10px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__form {
+    padding: 0 59px 0  70px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .contacts__form {
+    padding: 0 110px 47px;
     display: flex;
     justify-content: space-between;
   }
@@ -43,6 +95,13 @@
 .contacts__label {
   text-transform: uppercase;
   color: $color-dark-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__label {
+    font-size: 20px;
+    font-weight: 30px;
+  }
 }
 
 .contacts__input {
@@ -54,18 +113,114 @@
   text-transform: uppercase;
   color: $color-dark-grey;
   border: 1px solid $color-border-dark-grey;
+
+  &:hover {
+    outline: 1px solid $color-border-dark-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-dark-grey;
+  }
+}
+
+.contacts__input--error {
+  outline: 2px solid $color-error;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__input {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__input--email {
-  min-width: 198px;
-  background-image: url("/img/letter.svg");
-  background-repeat: no-repeat;
-  background-position: top 15px left 197px;
+  min-width: 195px;
+}
+
+.contacts__input-icon--email {
+  position: absolute;
+  top: 16px;
+  left: 265px;
+  fill: $color-special-dark-grey;
+
+  &:focus {
+    fill: $color-green;
+  }
+}
+
+.contacts__input-icon--email-error {
+  fill: $color-error;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__input-icon--email {
+    top: 22px;
+    left: 87%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__input-icon--email {
+    top: 36px;
+    left: 39%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__input--email {
+    min-width: 537px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contacts__input--email {
+    min-width: 390px;
+  }
 }
 
 .contacts__input--phone {
-  min-width: 182px;
-  background-image: url("/img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: top 12px left 180px;
+  min-width: 176px;
+}
+
+.contacts__input-icon--phone {
+  position: absolute;
+  top: 72px;
+  left: 265px;
+  fill: $color-special-dark-grey;
+
+  &:focus {
+    fill: $color-green;
+  }
+}
+
+.contacts__input-icon--phone-error {
+  fill: $color-error;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__input-icon--phone {
+    top: 97px;
+    left: 87%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__input-icon--phone {
+    top: 32px;
+    left: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__input--phone {
+    min-width: 510px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contacts__input--phone {
+    min-width: 500px;
+  }
 }

@@ -1,3 +1,7 @@
+.contacts-info {
+  position: relative;
+}
+
 .contacts-info__text {
   margin: 0;
   padding: 26px 20px;
@@ -11,6 +15,17 @@
     padding: 60px 70px 56px;
     display: grid;
     grid-template-columns: 163px 155px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-info__text {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 56px 80px;
+    gap: 87px;
+    background-color: $color-white;
   }
 }
 
@@ -32,12 +47,30 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .contacts-info__text-catalog {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 56px 80px;
+    gap: 87px;
+    background-color: $color-white;
+  }
+}
+
 .contacts-info__slogan {
   margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black-text;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-info__slogan {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts-info__address {
@@ -48,8 +81,46 @@
   color: $color-dark-grey;
 }
 
-.contacts-info__image {
+@media screen and (min-width: 768px) {
+  .contacts-info__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.contacts__info-pin {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__info-pin {
+    min-width: 113px;
+    min-height: 106px;
+    top: 50%;
+    left: 43%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__info-pin {
+    top: 26%;
+    left: 46%;
+  }
+}
+
+.contacts__info-iframe {
+  border: none;
+  display: block;
   width: 100%;
+  max-height: 362px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__info-iframe {
+    max-height: 400px;
+  }
 }
 
 .main-footer__container {
@@ -84,6 +155,14 @@
 
 .logo-footer__icon {
   margin: 39px 0 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -115,6 +194,18 @@
   }
 }
 
+.social__icon {
+  fill: $color-special-grey;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .copyright {
   margin: 0;
   padding: 20px 2px;
@@ -134,6 +225,28 @@
   font-family: "Arial", sans-serif;
   text-decoration: none;
   color: $color-dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright__link-academy {
+    margin-right: 22px;
+  }
+}
+
+.copyright__icon {
+  fill: $color-special-grey;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo-footer + .social {

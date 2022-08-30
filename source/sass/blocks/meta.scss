@@ -1,35 +1,73 @@
 .meta__wrapper {
   margin: 0;
-  padding: 0 20px 32px;
+  padding: 0 0 34px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .meta__wrapper {
     margin: 0;
-    padding: 65px 70px 72px;
+    padding: 45px 30px 57px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .meta__wrapper {
     margin: 0;
-    padding: 67px 110px 82px;
+    padding: 47px 70px 57px;
+  }
+}
+
+.meta__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: $color-green;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .meta__wrapper::after {
+    top: 48%;
   }
 }
 
 .meta__title {
   margin: 0;
-  margin-bottom: 34px;
+  padding: 0 20px;
+  display: inline-block;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
+  background-color: $color-white;
 }
 
 @media screen and (min-width: 768px) {
   .meta__title {
     margin: 0;
-    margin-bottom: 57px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.meta__wrapper-index {
+  padding: 0 20px 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .meta__wrapper-index {
+    padding: 0 65px 52px 70px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .meta__wrapper-index {
+    padding: 0 110px 62px;
   }
 }
 
@@ -67,6 +105,14 @@
   color: $color-black;
 }
 
+@media screen and (min-width: 768px) {
+  .meta__checkbox {
+    padding: 10px 0 32px 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .meta__mark {
   position: absolute;
   top: 2px;
@@ -76,6 +122,13 @@
   border: 1px solid $color-border-dark-grey;
 }
 
+@media screen and (min-width: 768px) {
+  .meta__mark {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .meta__input[type="checkbox"]:checked + .meta__mark {
   position: absolute;
   background-image: url("/img/check-mark.svg");
@@ -83,14 +136,44 @@
   background-position: center;
 }
 
+.meta__input:focus ~ .meta__mark {
+  border: 1px solid $color-radio;
+}
+
+.meta__input:hover ~ .meta__mark {
+  border: 1px solid $color-radio;
+}
+
+.meta__input:disabled ~ .meta__mark {
+  opacity: 0.3;
+}
+
 .meta__button {
   margin: 34px 0 31px;
-  padding: 7px;
+  padding: 10px;
   width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: $color-green;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:active {
+    background-color: $color-green-hover;
+    color: rgba($color: $color-white, $alpha: 0.3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .meta__button {
+    padding: 16px;
+    min-width: 282px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -112,6 +195,8 @@
 @media screen and (min-width: 768px) {
   .meta__textarea {
     margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
     text-align: start;
   }
 }
