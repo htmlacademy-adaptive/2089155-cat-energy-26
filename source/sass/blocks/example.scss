@@ -22,14 +22,14 @@
 
 .example__wrapper--color {
   margin: 0;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 20px;
   background-color: $color-index-grey;
 }
 
 @media screen and (min-width: 768px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 0 36px 100px 30px;
+    padding: 0 36px 250px 30px;
     background-color: $color-white;
   }
 }
@@ -37,7 +37,8 @@
 @media screen and (min-width: 1440px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 70px 110px 75px;
+    padding: 70px 70px 75px 110px;
+    min-width: 450px;
     background-color: $color-index-grey;
   }
 }
