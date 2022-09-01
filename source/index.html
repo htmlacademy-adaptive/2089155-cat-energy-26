@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -48,8 +52,12 @@
           <p class="program-advertisement__slogan">
             Занялся собой? Займись котом!
           </p>
-          <img class="program-advertisement__image" src="/img/can-mobile.png" width="280" height="270"
-            alt="Продукт Cat Energy.">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="img/can-desktop-1x.png 1x, img/can-desktop-2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/can-tablet-1x.png 1x, img/can-tablet-2x.png 2x">
+            <img class="program-advertisement__image" src="/img/can-mobile.png" srcset="img/can-mobile-2x.png 2x" width="280" height="270"
+              alt="Продукт Cat Energy.">
+          </picture>
           <a class="program-advertisement__toggle button" href="#">подобрать программу</a>
         </header>
       </div>
@@ -147,13 +155,27 @@
         </div>
       </div>
       <div class="example__gallery slider">
-        <img class="slider__image slider__image--fat" src="/img/slider/cat-fat.png" width="138" height="256"
-          alt="Толстый кот.">
-        <img class="slider__image slider__image--skinny" src="/img/slider/cat-skinny.png" width="138" height="256"
-          alt="Худой кот.">
-        <button class="slider__button" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
+        <div class="slider__container">
+          <div class="slider__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/slider/cat-fat-tablet-1x.png 1x, /img/slider/cat-fat-tablet-2x.png 2x">
+              <img class="slider__image--fat" src="/img/slider/cat-fat-mobile-1x.png" srcset="/img/slider/cat-fat-mobile-2x.png 2x" width="280" height="256"
+              alt="Толстый кот.">
+            </picture>
+          </div>
+          <div class="slider__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/slider/cat-skinny-tablet-1x.png 1x, /img/slider/cat-skinny-tablet-2x.png 2x">
+              <img class="slider__image--skinny" src="/img/slider/cat-skinny-mobile-1x.png" srcset="/img/slider/cat-skinny-mobile-2x.png 2x" width="280" height="256"
+              alt="Худой кот.">
+            </picture>
+          </div>
+          <div class="slider__toggle">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+           </button>
+          </div>
+        </div>
       </div>
     </div>
     </section>
