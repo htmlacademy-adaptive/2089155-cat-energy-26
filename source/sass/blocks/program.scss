@@ -133,12 +133,14 @@
     margin: 24px 315px 52px 0;
     font-size: 16px;
     line-height: 24px;
+    max-width: 350px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .program__description {
     margin: 73px 0 27px;
+    max-width: 480px;
   }
 }
 
