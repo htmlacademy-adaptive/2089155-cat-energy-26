@@ -15,8 +15,14 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-link" href="index.html">
-      <img class="main-header__logo-icon" src="img/logo-mobile.svg" width="34" height="38" alt="Кот.">
-      <img class="main-header__logo-text" src="img/logo-cat-energy.svg" width="101" height="18" alt="CAT ENERGY.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="/img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="/img/logo/logo-tablet.svg">
+        <img class="main-header__logo-icon" src="/img/logo/logo-mobile.svg" width="34" height="38" alt="Кот.">
+      </picture>
+    </a>
+    <a class="main-header__logo-link--text">
+      <img class="main-header__logo-text" src="/img/logo/logo-cat-energy.svg" width="101" height="18" alt="CAT ENERGY.">
     </a>
     <nav class="main-header__main-nav main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -335,7 +341,7 @@
       <div class="main-footer__container">
         <div class="main-footer__logo logo-footer">
           <a class="logo-footer__link" href="index.html">
-            <img class="logo-footer__icon" src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+            <img class="logo-footer__icon" src="img/logo/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
           </a>
         </div>
         <div class="main-footer__social social">

@@ -1,13 +1,13 @@
 .main-header {
   margin: 0;
   display: flex;
-  justify-content: space-between;
   padding: 10px 20px 17px;
 }
 
 @media screen and (min-width: 768px) {
   .main-header {
     padding: 18px 30px;
+    justify-content: space-between;
   }
 }
 
@@ -18,13 +18,35 @@
 }
 
 .main-header__logo-link {
-  display: flex;
-  justify-content: space-between;
-  width: 190px;
+  margin-right: 56px;
+}
+
+.main-header__logo-link--text {
+  display: block;
+  align-self: center;
+  margin-right: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header__logo-link--text {
+    display: none;
+  }
 }
 
 .main-header__logo-icon {
   align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header__logo-icon {
+    min-width: 174px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-header__logo-icon {
+    min-width: 202px;
+  }
 }
 
 .main-header__logo-text {
