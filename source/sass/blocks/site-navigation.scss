@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: -15px;
+    top: -6px;
     right: 0;
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +28,7 @@
 @media screen and (min-width: 1440px) {
   .site-navigation {
     margin: 0;
+    top: -3px;
     display: flex;
     width: 480px;
     justify-content: flex-end;
@@ -38,6 +39,7 @@
 .site-navigation__item {
   padding: 22px 0 24px;
   text-align: center;
+  align-self: center;
   list-style-type: none;
   border-top: 1px solid $color-border-navigation;
 
