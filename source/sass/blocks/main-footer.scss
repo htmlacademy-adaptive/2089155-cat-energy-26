@@ -60,6 +60,7 @@
 
 .contacts-info__slogan {
   margin: 0;
+  min-width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -154,7 +155,7 @@
 }
 
 .logo-footer__icon {
-  margin: 39px 0 32px;
+  margin: 38px 0 28px;
 
   &:hover {
     opacity: 0.8;
@@ -185,7 +186,7 @@
 
 .social__item {
   display: block;
-  padding: 20px 12px 21px;
+  padding: 20px 12px 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -208,7 +209,7 @@
 
 .copyright {
   margin: 0;
-  padding: 20px 2px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -223,6 +224,8 @@
 .copyright__link-academy {
   margin-top: 8px;
   font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   color: $color-dark-grey;
 

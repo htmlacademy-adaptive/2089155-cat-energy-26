@@ -6,6 +6,7 @@
 @media screen and (min-width: 768px) {
   .program__wrapper {
     margin: 0;
+    margin-top: -10px;
     padding: 0 30px 45px;
   }
 }
@@ -34,8 +35,8 @@
 }
 
 .program__item {
-  margin-top: 20px;
-  padding: 24px 20px 22px;
+  margin-top: 21px;
+  padding: 28px 20px 20px;
   background-color: $color-grey;
 }
 
@@ -79,14 +80,14 @@
 .program__item--walking-cat {
   background-image: url("/img/cat_back-1.svg");
   background-repeat: no-repeat;
-  background-position: top 24px left 13px;
+  background-position: top 25px left 13px;
 }
 
 @media screen and (min-width: 768px) {
   .program__item--walking-cat {
     background-image: url("/img/cat_back-tablet-2.svg");
     background-repeat: no-repeat;
-    background-position: top 81px right 28px;
+    background-position: top 90px right 28px;
   }
 }
 
@@ -100,7 +101,7 @@
 
 .program__title {
   margin: 0;
-  margin-left: 91px;
+  margin-left: 71px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -155,7 +156,7 @@
   color: $color-black;
   background-image: url("/img/right-arrow.svg");
   background-repeat: no-repeat;
-  background-position: top 25px left 100px;
+  background-position: top 22px left 100px;
 }
 
 .program__product-link:hover {
@@ -189,8 +190,8 @@
 }
 
 .program__description + .program__product-link {
-  margin-top: 19px;
-  padding-top: 23px;
+  margin-top: 22px;
+  padding-top: 22px;
   border-top: 1px solid $color-border-grey;
 }
 

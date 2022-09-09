@@ -26,7 +26,7 @@ export const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
-}
+};
 
 // HTML
 
@@ -34,7 +34,7 @@ const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
-}
+};
 
 //Script
 
@@ -42,7 +42,7 @@ const script = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
-}
+};
 
 //Images
 
@@ -50,12 +50,12 @@ const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
-}
+};
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
-}
+};
 
 //Webp
 
@@ -65,12 +65,12 @@ const createWebp = () => {
     webp: {}
   }))
   .pipe(gulp.dest('build/img'));
-}
+};
 
 //Svg
 
 const svg = () =>
-  gulp.src('source/img/*.svg')
+  gulp.src('source/img/**/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
@@ -83,7 +83,7 @@ const sprite = () => {
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
-}
+};
 
 //Copy
 
@@ -96,13 +96,13 @@ const copy = (done) => {
   })
   .pipe(gulp.dest('build'))
   done();
-}
+};
 
 //Clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
-}
+};
 
 // Server
 
@@ -116,22 +116,22 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 // Reload
 
 const reload = (done) => {
   browser.reload();
   done();
-  }
+};
 
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
+  gulp.watch('source/*.html', gulp.series(html, reload));
+};
 
 // Build
 
