@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header-catalog">
     <a class="main-header__logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="/img/logo/logo-desktop.svg">
@@ -54,7 +54,7 @@
       <div class="programs__wrapper">
         <div class="programs__name">
           <h2 class="programs__heading">Подбор программы</h2>
-          <p class="programs__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+          <p class="programs__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
         <div class="programs__index">
           <form class="programs__form form" action="https://echo.htmlacademy.ru/" method="post">
@@ -99,7 +99,7 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контактные данные<br>(владельца кота)</h2>
+        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
       </div>
       <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
@@ -107,18 +107,17 @@
             xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="/img/sprite.svg#letter"></use>
           </svg>
-          <label class="contacts__label" for="email">Email:*</label>
+          <label class="contacts__label" for="email">E-mail:*</label>
           <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email"
             value="kuklachev@gmail.com" required>
         </p>
         <p>
-          <label class="contacts__label" for="tel">Телефон:*</label>
+          <label class="contacts__label contacts__label-phone" for="tel">Телефон:*</label>
           <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel" value="8 (960) 900-60-90"required>
           <svg class="contacts__input-icon--phone" width="20" height="21" viewBox="0 0 20 21"
             xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="/img/sprite.svg#phone"></use>
           </svg>
-
         </p>
       </form>
     </section>
@@ -129,7 +128,7 @@
       <form class="comments__form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label class="visually-hidden" for="comment">Текст комментария</label>
-          <textarea class="comments__textarea" name="comment" id="comment" rows="7">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comments__textarea" name="comment" id="comment" rows="5">Расскажите обо всех повадках кота</textarea>
         </p>
       </form>
     </section>
@@ -171,7 +170,7 @@
             <button class="meta__button button" type="submit">Отправить заявку</button>
           </li>
           <li class="meta__item meta__textarea">
-            <p class="meta__textarea">* __ Обязательные поля</p>
+            <p class="meta__textarea">*&mdash; Обязательные поля</p>
           </li>
         </ul>
       </div>
