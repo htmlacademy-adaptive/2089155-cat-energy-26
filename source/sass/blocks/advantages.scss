@@ -124,8 +124,20 @@
   margin: 0;
 }
 
+.advantages__item-description-next {
+  margin: 0;
+  margin-left: 70px;
+  margin-top: -18px;
+}
+
 @media screen and (min-width: 768px) {
   .advantages__item-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__item-description-next {
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }

@@ -7,7 +7,7 @@
 @media screen and (min-width: 768px) {
   .example__wrapper {
     margin: 0;
-    padding: 43px 30px 63px;
+    padding: 43px 30px 63px 30px;
     background-color: $color-white;
   }
 }
@@ -22,14 +22,14 @@
 
 .example__wrapper--color {
   margin: 0;
-  padding: 21px 20px 20px;
+  padding: 21px 17px 20px 20px;
   background-color: $color-index-grey;
 }
 
 @media screen and (min-width: 768px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 0 36px 250px 30px;
+    padding: 0 32px 250px 30px;
     background-color: $color-white;
   }
 }
@@ -37,7 +37,7 @@
 @media screen and (min-width: 1440px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 70px 70px 75px 110px;
+    padding: 72px 70px 75px 110px;
     min-width: 450px;
     background-color: $color-index-grey;
   }
@@ -68,6 +68,7 @@
   .example__description {
     margin: 0;
     margin-bottom: 54px;
+    max-width: 700px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -228,5 +229,9 @@
 @media screen and (min-width: 1440px) {
   .example__wrapper--slider {
     display: flex;
+  }
+
+  .example__price-number {
+    margin-right: 18px;
   }
 }

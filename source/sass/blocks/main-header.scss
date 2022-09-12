@@ -13,7 +13,26 @@
 
 @media screen and (min-width: 1440px) {
   .main-header {
-    padding: 44px 110px 10px;
+    padding: 52px 110px 10px;
+  }
+}
+
+.main-header-catalog {
+  margin: 0;
+  display: flex;
+  padding: 11px 20px 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header-catalog {
+    padding: 25px 30px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-header-catalog {
+    padding: 52px 110px 10px;
   }
 }
 
@@ -25,6 +44,14 @@
   display: block;
   align-self: center;
   margin-right: 90px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -35,6 +62,14 @@
 
 .main-header__logo-icon {
   align-self: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -99,7 +134,7 @@
     content: "";
     position: absolute;
     top: 18px;
-    left: 7px;
+    left: 15px;
     width: 26px;
     height: 2px;
     background-color: $color-black;

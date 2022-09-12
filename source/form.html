@@ -64,7 +64,7 @@
             </p>
             <p class="form__mame">
               <label class="form__label" for="weight">Вес (кг):*</label>
-               <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
+              <input class="form__input form__input--weight" type="text" id="weight" name="weight" required value="7">
               </p>
             <p class="form__mame">
               <label class="form__label" for="age">Возраст (лет):</label>
@@ -105,7 +105,7 @@
         <p>
           <svg class="contacts__input-icon--email" width="19" height="14" viewBox="0 0 19 14" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="/img/sprite.svg#email"></use>
+            <use xlink:href="/img/sprite.svg#letter"></use>
           </svg>
           <label class="contacts__label" for="email">Email:*</label>
           <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email"
@@ -129,7 +129,7 @@
       <form class="comments__form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label class="visually-hidden" for="comment">Текст комментария</label>
-           <textarea class="comments__textarea" name="comment" id="comment" rows="7">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comments__textarea" name="comment" id="comment" rows="7">Расскажите обо всех повадках кота</textarea>
         </p>
       </form>
     </section>
@@ -181,8 +181,14 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts-info">
         <div class="contacts-info__text-catalog">
-          <p class="contacts-info__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts-info__slogan--text">
+            <p class="contacts-info__slogan">Приглашаем</p>
+            <p class="contacts-info__slogan">к сотрудничеству дилеров!</p>
+          </div>
+          <div class="contacts-info__address-wrapper">
+            <p class="contacts-info__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts-info__address-next">Санкт-Петербург</p>
+          </div>
         </div>
         <img class="contacts__info-pin" src="/img/map-pin.png" width="57" height="53" alt="Пин.">
         <iframe class="contacts__info-iframe"
@@ -233,7 +239,7 @@
           <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="27" height="34"
               viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg" aria-label="Сайт HTML Academy">
-              <use xlink:href="/img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="/img/sprite.svg#logo-html"></use>
             </svg>
           </a>
         </div>

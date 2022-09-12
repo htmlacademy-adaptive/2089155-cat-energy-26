@@ -21,7 +21,7 @@
 @media screen and (min-width: 1440px) {
   .contacts-info__text {
     position: absolute;
-    top: 95px;
+    top: 97px;
     left: 110px;
     padding: 56px 80px;
     gap: 87px;
@@ -31,7 +31,7 @@
 
 .contacts-info__text-catalog {
   margin: 0;
-  padding: 26px 20px;
+  padding: 26px 20px 27px;
   display: flex;
   justify-content: space-between;
   background-color: $color-grey;
@@ -50,7 +50,7 @@
 @media screen and (min-width: 1440px) {
   .contacts-info__text-catalog {
     position: absolute;
-    top: 95px;
+    top: 97px;
     left: 110px;
     padding: 56px 80px;
     gap: 87px;
@@ -86,6 +86,37 @@
   .contacts-info__address {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-info__address {
+    text-align: start;
+  }
+}
+
+.contacts-info__address-next {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-grey;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-info__address-next {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-info__address-next {
+    margin-top: 17px;
+    text-align: start;
   }
 }
 
@@ -141,7 +172,7 @@
 @media screen and (min-width: 1440px) {
   .main-footer__container {
     margin: 0;
-    padding: 50px 110px;
+    padding: 52px 110px;
   }
 }
 
@@ -152,6 +183,12 @@
 .logo-footer__link {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer__link {
+    margin-top: 10px;
+  }
 }
 
 .logo-footer__icon {
@@ -182,6 +219,18 @@
   display: flex;
   list-style-type: none;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social__list {
+    margin-left: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .social__list {
+    margin-left: 27px;
+  }
 }
 
 .social__item {
@@ -217,7 +266,14 @@
 @media screen and (min-width: 768px) {
   .copyright {
     margin: 0;
-    padding: 0;
+    padding: 2px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .copyright {
+    margin: 0;
+    padding: 4px 0;
   }
 }
 
