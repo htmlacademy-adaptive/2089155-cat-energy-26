@@ -7,7 +7,7 @@
 @media screen and (min-width: 768px) {
   .example__wrapper {
     margin: 0;
-    padding: 43px 30px 63px;
+    padding: 43px 30px 63px 30px;
     background-color: $color-white;
   }
 }
@@ -22,14 +22,14 @@
 
 .example__wrapper--color {
   margin: 0;
-  padding: 25px 20px 20px;
+  padding: 21px 17px 20px 20px;
   background-color: $color-index-grey;
 }
 
 @media screen and (min-width: 768px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 0 36px 250px 30px;
+    padding: 0 32px 250px 30px;
     background-color: $color-white;
   }
 }
@@ -37,7 +37,7 @@
 @media screen and (min-width: 1440px) {
   .example__wrapper--color {
     margin: 0;
-    padding: 70px 70px 75px 110px;
+    padding: 72px 70px 75px 110px;
     min-width: 450px;
     background-color: $color-index-grey;
   }
@@ -68,6 +68,7 @@
   .example__description {
     margin: 0;
     margin-bottom: 54px;
+    max-width: 700px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -112,7 +113,7 @@
 
 @media screen and (min-width: 768px) {
   .example__result {
-    margin-right: 42px;
+    margin-right: 40px;
     min-width: 162px;
     min-height: 72px;
   }
@@ -122,14 +123,14 @@
   width: 87px;
   height: 29px;
   position: absolute;
-  top: 42px;
-  left: 20px;
+  top: 44px;
+  left: 18px;
   background-color: $color-index-grey;
 }
 
 @media screen and (min-width: 768px) {
   .example__time {
-    top: 65px;
+    top: 62px;
     background: $color-white;
 
     br {
@@ -141,12 +142,12 @@
 @media screen and (min-width: 768px) {
   .example__time--weight {
     width: 114px;
-    left: 25px;
+    left: 21px;
   }
 
   .example__time--data {
     width: 142px;
-    left: 10px;
+    left: 5px;
   }
 }
 
@@ -190,7 +191,7 @@
 }
 
 .example__price {
-  margin: 34px 0 20px;
+  margin: 32px 0 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -199,7 +200,7 @@
 
 @media screen and (min-width: 768px) {
   .example__price {
-    margin: 5px 0 0 0;
+    margin: 9px 0 0 0;
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -228,5 +229,9 @@
 @media screen and (min-width: 1440px) {
   .example__wrapper--slider {
     display: flex;
+  }
+
+  .example__price-number {
+    margin-right: 18px;
   }
 }

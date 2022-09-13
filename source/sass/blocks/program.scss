@@ -6,6 +6,7 @@
 @media screen and (min-width: 768px) {
   .program__wrapper {
     margin: 0;
+    margin-top: -10px;
     padding: 0 30px 45px;
   }
 }
@@ -13,7 +14,7 @@
 @media screen and (min-width: 1440px) {
   .program__wrapper {
     margin: 0;
-    padding: 82px 110px 71px;
+    padding: 64px 110px 70px;
   }
 }
 
@@ -34,8 +35,8 @@
 }
 
 .program__item {
-  margin-top: 20px;
-  padding: 24px 20px 22px;
+  margin-top: 21px;
+  padding: 29px 20px 20px;
   background-color: $color-grey;
 }
 
@@ -79,14 +80,14 @@
 .program__item--walking-cat {
   background-image: url("/img/cat_back-1.svg");
   background-repeat: no-repeat;
-  background-position: top 24px left 13px;
+  background-position: top 23px left 13px;
 }
 
 @media screen and (min-width: 768px) {
   .program__item--walking-cat {
     background-image: url("/img/cat_back-tablet-2.svg");
     background-repeat: no-repeat;
-    background-position: top 81px right 28px;
+    background-position: top 90px right 28px;
   }
 }
 
@@ -94,13 +95,13 @@
   .program__item--walking-cat {
     background-image: url("/img/cat_back-desctop-2.svg");
     background-repeat: no-repeat;
-    background-position: top 41px left 32px;
+    background-position: top 47px left 33px;
   }
 }
 
 .program__title {
   margin: 0;
-  margin-left: 91px;
+  margin-left: 71px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -118,13 +119,18 @@
 @media screen and (min-width: 1440px) {
   .program__title {
     margin: 0;
+    margin-left: 23px;
     text-align: center;
+  }
+
+  .program__title--walking-cat {
+    margin-left: 63px;
   }
 }
 
 .program__description {
   font-family: "Arial", sans-serif;
-  margin: 29px 0 0;
+  margin: 28px 0 0;
   color: $color-dark-grey;
 }
 
@@ -139,7 +145,7 @@
 
 @media screen and (min-width: 1440px) {
   .program__description {
-    margin: 73px 0 27px;
+    margin: 74px 0 27px;
     max-width: 480px;
   }
 }
@@ -155,7 +161,7 @@
   color: $color-black;
   background-image: url("/img/right-arrow.svg");
   background-repeat: no-repeat;
-  background-position: top 25px left 100px;
+  background-position: top 22px left 100px;
 }
 
 .program__product-link:hover {
@@ -174,7 +180,17 @@
     padding: 0;
     font-size: 20px;
     line-height: 30px;
-    background-position: top 9px left 128px;
+    background-position: top 9px left 130px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .program__product-link {
+    background-position: top 8px left 136px;
+  }
+
+  .program__product-link-pro {
+    background-position: top 8px left 130px;
   }
 }
 
@@ -189,8 +205,8 @@
 }
 
 .program__description + .program__product-link {
-  margin-top: 19px;
-  padding-top: 23px;
+  margin-top: 22px;
+  padding-top: 22px;
   border-top: 1px solid $color-border-grey;
 }
 

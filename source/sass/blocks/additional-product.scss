@@ -1,6 +1,6 @@
 .additional-product__wrapper {
   margin: 0;
-  padding: 25px 0 10px;
+  padding: 25px 0 5px;
   position: relative;
   border-top: 1px solid $color-light-grey;
 }
@@ -8,7 +8,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__wrapper {
     margin: 0;
-    padding: 68px 30px 80px;
+    padding: 70px 30px 80px;
     border: none;
   }
 }
@@ -16,7 +16,7 @@
 @media screen and (min-width: 1440px) {
   .additional-product__wrapper {
     margin: 0;
-    padding: 75px 70px 81px;
+    padding: 75px 72px 81px;
     border: none;
   }
 }
@@ -24,7 +24,7 @@
 .additional-product__wrapper::after {
   content: "";
   position: absolute;
-  top: 65%;
+  top: 68%;
   left: 0;
   height: 2px;
   width: 100%;
@@ -36,7 +36,20 @@
   .additional-product__wrapper::after {
     content: "";
     position: absolute;
-    top: 48%;
+    top: 49%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-green;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .additional-product__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 51%;
     left: 0;
     height: 2px;
     width: 100%;
@@ -66,7 +79,7 @@
 
 .additional-product__list-wrapper {
   margin: 0;
-  padding: 25px 20px 35px;
+  padding: 28px 20px 35px;
   position: relative;
 }
 
@@ -114,7 +127,7 @@
 }
 
 .additional-product__item {
-  padding: 0;
+  padding: 1px 0;
   list-style-type: none;
   border-bottom: 1px solid $color-border-dark-grey;
 }
@@ -131,7 +144,7 @@
 
 @media screen and (min-width: 1440px) {
   .additional-product__item {
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     min-width: 895px;
     display: grid;
     grid-template-columns: 286px 289px 244px;
@@ -145,7 +158,7 @@
 }
 
 .additional-product__heading {
-  margin: 13px 0 10px;
+  margin: 13px 0 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -162,7 +175,7 @@
 }
 
 .additional-product__container {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
@@ -174,6 +187,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__container {
     margin: 0;
+    margin-top: 3px;
     display: grid;
     grid-template-columns: 223px 93px;
     font-size: 16px;
@@ -185,14 +199,22 @@
 @media screen and (min-width: 1440px) {
   .additional-product__container {
     margin: 0;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 3px;
+    grid-template-columns: 180px 45px;
+  }
+
+  .additional-product__description {
+    text-align: start;
+  }
+
+  .additional-product__price {
+    text-align: start;
   }
 }
 
 .additional-product__toggle {
   width: 100%;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   padding: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -212,7 +234,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__toggle {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 21px;
   }
 }
 
@@ -230,12 +252,12 @@
 
 .additional-product__icon {
   margin-top: 59px;
-  margin-left: 35%;
+  margin-left: 36%;
 }
 
 @media screen and (min-width: 768px) {
   .additional-product__icon {
-    margin-left: 10%;
+    margin-left: 11%;
   }
 }
 
@@ -248,7 +270,7 @@
 
 .additional-product__index {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 34px;
   height: 290px;
   background-image: linear-gradient(
     rgba(104, 183, 56, 0.85),
@@ -268,7 +290,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__index {
     max-height: 200px;
-    margin-top: 69px;
+    margin-top: 67px;
     display: flex;
     background-image: linear-gradient(
       rgba(104, 183, 56, 0.85),
@@ -310,7 +332,17 @@
 
 .additional-product__gift {
   margin: 0;
-  padding: 45px 61px 43px 58px;
+  padding: 46px 61px 0 58px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-white;
+}
+
+.additional-product__gift-next {
+  margin: 0;
+  padding: 0 61px 43px 58px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -320,7 +352,14 @@
 
 @media screen and (min-width: 768px) {
   .additional-product__gift {
-    margin: 10% 10% 10% 39%;
+    margin: 70px 40px 0 267px;
+    max-width: 161px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .additional-product__gift-next {
+    margin: 0 40px 20px 267px;
     max-width: 161px;
     padding: 0;
     text-align: left;
@@ -329,7 +368,12 @@
 
 @media screen and (min-width: 1440px) {
   .additional-product__gift {
-    margin: 45px 40px;
+    margin: 47px 40px 0;
+    text-align: center;
+  }
+
+  .additional-product__gift-next {
+    margin: 0 40px;
     text-align: center;
   }
 }
