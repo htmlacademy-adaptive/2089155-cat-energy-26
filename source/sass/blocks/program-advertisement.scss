@@ -15,6 +15,7 @@
     url("/img/background-cat.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: $color-green;
   z-index: -1;
 
   @media (min-resolution: 2dppx) {
@@ -23,6 +24,7 @@
       rgba(104, 183, 56, 0.85)),
       url("/img/background-cat-2x.jpg");
     background-size: 320px auto;
+    background-color: $color-green;
   }
 }
 
@@ -47,6 +49,7 @@
       url("/img/background-cat-desktop.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-color: $color-green;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
@@ -55,6 +58,7 @@
         rgba(104, 183, 56, 0.85)),
         url("/img/background-cat-desktop-2x.jpg");
       background-size: 100% auto;
+      background-color: $color-green;
     }
   }
 }
