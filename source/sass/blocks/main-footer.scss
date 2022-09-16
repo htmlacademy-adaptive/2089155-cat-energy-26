@@ -211,12 +211,14 @@
 
 .social {
   margin: 0;
+  max-width: 300px;
 }
 
 .social__list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
 }
