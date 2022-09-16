@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.min.css">
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/img/favicons/32.svg" type="image/svg+xml">
@@ -58,14 +59,16 @@
         </div>
         <ul class="catalog__list product">
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-1-desktop-1x.png, /img/catalog-product/catalog-1-desktop-2x.png 2x">
-              <img class="product__image" src="/img/catalog-product/catalog-1-1x.png"
-                srcset="/img/catalog-product/catalog-1-2x.png 2x" width="68" height="86" alt="Товар 1.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-1-desktop-1x.png, /img/catalog-product/catalog-1-desktop-2x.png 2x">
+                <img class="product__image" src="/img/catalog-product/catalog-1-1x.png"
+                  srcset="/img/catalog-product/catalog-1-2x.png 2x" width="68" height="86" alt="Товар 1.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy PRO<span class="product__title-number">500 г</span></h3>
               </a>
               <div class="product-container">
@@ -75,9 +78,8 @@
                     <dd class="product-container__description">500 г</dd>
                   </div>
                   <div class="product-container__item">
-                    <dt class="product-container__title">Вкус
+                    <dt class="product-container__title">Вкус</dt>
                     <dd class="product-container__description">Курица</dd>
-                    </dt>
                   </div>
                   <div class="product-container__item">
                     <dt class="product-container__title">Цена</dt>
@@ -86,17 +88,19 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle" type="button">Заказать</button>
+            <a class="product__toggle" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-2-desktop-1x.png, /img/catalog-product/catalog-2-desktop-2x.png 2x">
-              <img class="product__image-index" src="img/catalog-product/catalog-2-1x.png"
-                srcset="/img/catalog-product/catalog-2-2x.png 2x" width="84" height="100" alt="Товар 2.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-2-desktop-1x.png, /img/catalog-product/catalog-2-desktop-2x.png 2x">
+                <img class="product__image-index" src="img/catalog-product/catalog-2-1x.png"
+                  srcset="/img/catalog-product/catalog-2-2x.png 2x" width="84" height="100" alt="Товар 2.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy PRO<span class="product__title-number">1000 г</span></h3>
               </a>
               <div class="product-container">
@@ -116,17 +120,19 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-index" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-index" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-3-desktop-1x.png, /img/catalog-product/catalog-3-desktop-2x.png 2x">
-              <img class="product__image product__image-next" src="/img/catalog-product/catalog-3-1x.png"
-                srcset="/img/catalog-product/catalog-3-2x.png 2x" width="68" height="86" alt="Товар 1.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-3-desktop-1x.png, /img/catalog-product/catalog-3-desktop-2x.png 2x">
+                <img class="product__image product__image-next" src="/img/catalog-product/catalog-3-1x.png"
+                  srcset="/img/catalog-product/catalog-3-2x.png 2x" width="68" height="86" alt="Товар 1.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy PRO <span class="product__title-number">500 г</span></h3>
               </a>
               <div class="product-container">
@@ -146,17 +152,18 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-next" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-next" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-4-desktop-1x.png, /img/catalog-product/catalog-4-desktop-2x.png 2x">
-              <img class="product__image-index" src="img/catalog-product/catalog-4-1x.png"
-                srcset="/img/catalog-product/catalog-4-2x.png 2x" width="84" height="100" alt="Товар 2.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-4-desktop-1x.png, /img/catalog-product/catalog-4-desktop-2x.png 2x">
+                <img class="product__image-index" src="img/catalog-product/catalog-4-1x.png"
+                  srcset="/img/catalog-product/catalog-4-2x.png 2x" width="84" height="100" alt="Товар 2.">
+              </picture>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy PRO <span class="product__title-number">1000 г</span></h3>
               </a>
               <div class="product-container">
@@ -176,17 +183,19 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-index" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-index" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-5-desktop-1x.png, /img/catalog-product/catalog-5-desktop-2x.png 2x">
-              <img class="product__image product__image-next-1" src="/img/catalog-product/catalog-5-1x.png"
-                srcset="/img/catalog-product/catalog-5-2x.png 2x" width="68" height="86" alt="Товар 1.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-5-desktop-1x.png, /img/catalog-product/catalog-5-desktop-2x.png 2x">
+                <img class="product__image product__image-next-1" src="/img/catalog-product/catalog-5-1x.png"
+                  srcset="/img/catalog-product/catalog-5-2x.png 2x" width="68" height="86" alt="Товар 1.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy SLIM<span class="product__title-number">500 г</span></h3>
               </a>
               <div class="product-container">
@@ -206,17 +215,19 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-next-1" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-next-1" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-6-desktop-1x.png, /img/catalog-product/catalog-6-desktop-2x.png 2x">
-              <img class="product__image-index" src="img/catalog-product/catalog-6-1x.png"
-                srcset="/img/catalog-product/catalog-6-2x.png 2x" width="84" height="100" alt="Товар 2.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-6-desktop-1x.png, /img/catalog-product/catalog-6-desktop-2x.png 2x">
+                <img class="product__image-index" src="img/catalog-product/catalog-6-1x.png"
+                  srcset="/img/catalog-product/catalog-6-2x.png 2x" width="84" height="100" alt="Товар 2.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy SLIM<span class="product__title-number">1000 г</span></h3>
               </a>
               <div class="product-container">
@@ -236,17 +247,19 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-index" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-index" href="Order.html">Заказать</a>
           </li>
           <li class="product__item">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="/img/catalog-product/catalog-7-desktop-1x.png, /img/catalog-product/catalog-7-desktop-2x.png 2x">
-              <img class="product__image product__image-next" src="/img/catalog-product/catalog-7-1x.png"
-                srcset="/img/catalog-product/catalog-7-2x.png 2x" width="68" height="86" alt="Товар 1.">
-            </picture>
+            <a class="product__item--image" href="product.html">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="/img/catalog-product/catalog-7-desktop-1x.png, /img/catalog-product/catalog-7-desktop-2x.png 2x">
+                <img class="product__image product__image-next" src="/img/catalog-product/catalog-7-1x.png"
+                  srcset="/img/catalog-product/catalog-7-2x.png 2x" width="68" height="86" alt="Товар 1.">
+              </picture>
+            </a>
             <div class="product__index">
-              <a class="product__link" href="#">
+              <a class="product__link" href="product.html">
                 <h3 class="product__title">Cat Energy SLIM <span class="product__title-number">500 г</span></h3>
               </a>
               <div class="product-container">
@@ -266,7 +279,7 @@
                 </dl>
               </div>
             </div>
-            <button class="product__toggle product__toggle-next" type="button">Заказать</button>
+            <a class="product__toggle product__toggle-next" href="Order.html">Заказать</a>
           </li>
           <li class="product__item product__item-button">
             <div class="product__button">
@@ -275,7 +288,7 @@
               </button>
               <p class="product__card">Показать еще<span>100500 товаров</span></p>
               <p class="product__text">На самом деле вкусов <span>гораздо больше!</span></p>
-              <a class="button product__button-to-all" href="#">Показать все</a>
+              <a class="button product__button-to-all" href="new-product.htm">Показать все</a>
             </div>
           </li>
         </ul>
@@ -288,44 +301,44 @@
       <div class="additional-product__list-wrapper">
         <ul class="additional-product__list">
           <li class="additional-product__item">
-            <a class="additional-product__link" href="#">
+            <a class="additional-product__link" href="product.html">
               <h3 class="additional-product__heading">Сахарозаменитель</h3>
             </a>
             <div class="additional-product__container">
               <p class="additional-product__description">1 упаковка (100 г)</p>
               <p class="additional-product__price">200 Р.</p>
             </div>
-            <button class="additional-product__toggle" type="button">Заказать</button>
+            <a class="additional-product__toggle" href="Order.html">Заказать</a>
           </li>
           <li class="additional-product__item">
-            <a class="additional-product__link" href="#">
+            <a class="additional-product__link" href="product.html">
               <h3 class="additional-product__heading">Питьевая вода</h3>
             </a>
             <div class="additional-product__container">
               <p class="additional-product__description">5 литров</p>
               <p class="additional-product__price">50 Р.</p>
             </div>
-            <button class="additional-product__toggle" type="button">Заказать</button>
+            <a class="additional-product__toggle" href="Order.html">Заказать</a>
           </li>
           <li class="additional-product__item">
-            <a class="additional-product__link" href="#">
+            <a class="additional-product__link" href="product.html">
               <h3 class="additional-product__heading">Молоко</h3>
             </a>
             <div class="additional-product__container">
               <p class="additional-product__description">1 литр</p>
               <p class="additional-product__price">100 Р.</p>
             </div>
-            <button class="additional-product__toggle" type="button">Заказать</button>
+            <a class="additional-product__toggle" href="Order.html">Заказать</a>
           </li>
           <li class="additional-product__item">
-            <a class="additional-product__link" href="#">
+            <a class="additional-product__link" href="product.html">
               <h3 class="additional-product__heading">Витамины</h3>
             </a>
             <div class="additional-product__container">
               <p class="additional-product__description">1 упаковка (30 г)</p>
               <p class="additional-product__price">300 Р.</p>
             </div>
-            <button class="additional-product__toggle" type="button">Заказать</button>
+            <a class="additional-product__toggle" href="Order.html">Заказать</a>
           </li>
         </ul>
         <div class="additional-product__index">

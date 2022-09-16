@@ -8,7 +8,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__wrapper {
     margin: 0;
-    padding: 70px 30px 80px;
+    padding: 69px 30px 80px;
     border: none;
   }
 }
@@ -206,18 +206,24 @@
   .additional-product__description {
     text-align: start;
   }
+}
 
+@media screen and (min-width: 1440px) {
   .additional-product__price {
     text-align: start;
   }
 }
 
 .additional-product__toggle {
-  width: 100%;
   margin-bottom: 18px;
   padding: 10px;
+  display: block;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
   background-color: $color-green;
   cursor: pointer;
 
@@ -235,12 +241,13 @@
   .additional-product__toggle {
     margin: 0;
     margin-top: 21px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .additional-product__toggle {
-    max-width: 244px;
+    max-width: 224px;
     margin: 0;
   }
 }
@@ -277,6 +284,7 @@
     rgba(104, 183, 56, 0.85)),
     url("/img/backpack.jpg");
   background-repeat: no-repeat;
+  background-color: $color-green;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -284,6 +292,7 @@
       rgba(104, 183, 56, 0.85)),
       url("/img/backpack-2x.jpg");
     background-size: 100% auto;
+    background-color: $color-green;
   }
 }
 
@@ -297,6 +306,7 @@
       rgba(104, 183, 56, 0.85)),
       url("/img/backpack-tablet.jpg");
     background-repeat: no-repeat;
+    background-color: $color-green;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(
@@ -304,6 +314,7 @@
         rgba(104, 183, 56, 0.85)),
         url("/img/backpack-tablet-2x.jpg");
       background-size: 100% auto;
+      background-color: $color-green;
     }
   }
 }
@@ -319,6 +330,7 @@
       rgba(104, 183, 56, 0.85)),
       url("/img/backpack-desktop.jpg");
     background-repeat: no-repeat;
+    background-color: $color-green;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(
@@ -326,6 +338,7 @@
         rgba(104, 183, 56, 0.85)),
         url("/img/backpack-desktop-2x.jpg");
       background-size: 100% auto;
+      background-color: $color-green;
     }
   }
 }
