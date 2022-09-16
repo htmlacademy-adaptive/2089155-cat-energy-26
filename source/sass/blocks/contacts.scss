@@ -149,14 +149,34 @@
   }
 }
 
+.contacts__form-button--email {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 3px;
+  right: 25px;
+  background-color: $color-white;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__form-button--email {
+    top: 5px;
+    right: 73px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__form-button--email {
+    top: 18px;
+    right: 770px;
+  }
+}
+
 .contacts__input--email {
   min-width: 186px;
 }
 
-.contacts__input-icon--email {
-  position: absolute;
-  top: 16px;
-  left: 265px;
+.contacts__button-icon--email {
   fill: $color-special-dark-grey;
 
   &:focus {
@@ -164,22 +184,8 @@
   }
 }
 
-.contacts__input-icon--email-error {
+.contacts__button-icon--email-error {
   fill: $color-error;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__input-icon--email {
-    top: 22px;
-    left: 87%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .contacts__input-icon--email {
-    top: 32px;
-    left: 644px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -198,10 +204,30 @@
   min-width: 169px;
 }
 
-.contacts__input-icon--phone {
+.contacts__form-button--phone {
   position: absolute;
-  top: 72px;
-  left: 265px;
+  width: 40px;
+  height: 40px;
+  top: 65px;
+  right: 25px;
+  background-color: $color-white;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__form-button--phone {
+    top: 80px;
+    right: 73px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts__form-button--phone {
+    top: 20px;
+    right: 115px;
+  }
+}
+
+.contacts__button-icon--phone {
   fill: $color-special-dark-grey;
 
   &:focus {
@@ -211,20 +237,6 @@
 
 .contacts__input-icon--phone-error {
   fill: $color-error;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__input-icon--phone {
-    top: 90px;
-    left: 87%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .contacts__input-icon--phone {
-    top: 29px;
-    left: 90%;
-  }
 }
 
 @media screen and (min-width: 768px) {

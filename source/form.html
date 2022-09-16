@@ -104,21 +104,25 @@
       </div>
       <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
-          <svg class="contacts__input-icon--email" width="19" height="14" viewBox="0 0 19 14" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="/img/sprite.svg#letter"></use>
-          </svg>
+          <button class="contacts__form-button--email">
+            <svg class="contacts__form-button-icon--email" width="19" height="14" viewBox="0 0 19 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="/img/sprite.svg#letter"></use>
+            </svg>
+          </button>
           <label class="contacts__label" for="email">E-mail:*</label>
           <input class="contacts__input contacts__input--email" type="email" name="newsletter-email" id="email"
             value="kuklachev@gmail.com" required>
         </p>
         <p>
+          <button class="contacts__form-button--phone">
+            <svg class="contacts__button-icon--phone" width="20" height="21" viewBox="0 0 20 21"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="/img/sprite.svg#phone"></use>
+            </svg>
+          </button>
           <label class="contacts__label contacts__label-phone" for="tel">Телефон:*</label>
           <input class="contacts__input contacts__input--phone" type="tel" name="tel" id="tel" value="8 (960) 900-60-90" required>
-          <svg class="contacts__input-icon--phone" width="20" height="21" viewBox="0 0 20 21"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="/img/sprite.svg#phone"></use>
-          </svg>
         </p>
       </form>
     </section>
