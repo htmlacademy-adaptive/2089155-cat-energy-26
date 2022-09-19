@@ -70,7 +70,7 @@
 }
 
 .contacts__form {
-  padding: 0 20px 10px;
+  padding: 0 20px 9px;
   position: relative;
 }
 
@@ -153,14 +153,14 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 3px;
-  right: 25px;
+  top: 4px;
+  right: 24px;
   background-color: $color-white;
 }
 
 @media screen and (min-width: 768px) {
   .contacts__form-button--email {
-    top: 5px;
+    top: 7px;
     right: 73px;
   }
 }
@@ -176,7 +176,7 @@
   min-width: 186px;
 }
 
-.contacts__button-icon--email {
+.contacts__form-icon--email {
   fill: $color-special-dark-grey;
 
   &:focus {
@@ -184,7 +184,7 @@
   }
 }
 
-.contacts__button-icon--email-error {
+.contacts__form-icon--email-error {
   fill: $color-error;
 }
 
@@ -201,7 +201,7 @@
 }
 
 .contacts__input--phone {
-  min-width: 169px;
+  min-width: 170px;
 }
 
 .contacts__form-button--phone {
@@ -209,7 +209,7 @@
   width: 40px;
   height: 40px;
   top: 65px;
-  right: 25px;
+  right: 24px;
   background-color: $color-white;
 }
 
@@ -227,7 +227,7 @@
   }
 }
 
-.contacts__button-icon--phone {
+.contacts__form-icon--phone {
   fill: $color-special-dark-grey;
 
   &:focus {

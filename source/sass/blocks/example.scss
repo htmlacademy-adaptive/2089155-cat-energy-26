@@ -20,14 +20,14 @@
   }
 }
 
-.example__wrapper--color {
+.example__wrapper-color {
   margin: 0;
-  padding: 21px 17px 20px 20px;
+  padding: 21px 16px 20px 21px;
   background-color: $color-index-grey;
 }
 
 @media screen and (min-width: 768px) {
-  .example__wrapper--color {
+  .example__wrapper-color {
     margin: 0;
     padding: 0 32px 250px 30px;
     background-color: $color-white;
@@ -35,7 +35,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .example__wrapper--color {
+  .example__wrapper-color {
     margin: 0;
     padding: 72px 70px 75px 110px;
     min-width: 450px;
@@ -104,6 +104,7 @@
 
 .example__result {
   margin: 0;
+  margin-right: 4px;
   padding: 0;
   min-width: 124px;
   min-height: 56px;
@@ -228,7 +229,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .example__wrapper--slider {
+  .example__wrapper-slider {
     display: flex;
   }
 
