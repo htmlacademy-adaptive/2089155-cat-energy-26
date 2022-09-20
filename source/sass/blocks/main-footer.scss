@@ -31,7 +31,7 @@
 
 .contacts-info__text-catalog {
   margin: 0;
-  padding: 29px 20px 28px;
+  padding: 31px 20px 26px;
   display: flex;
   justify-content: space-between;
   background-color: $color-grey;
@@ -40,7 +40,7 @@
 @media screen and (min-width: 768px) {
   .contacts-info__text-catalog {
     margin: 0;
-    padding: 60px 70px 56px;
+    padding: 59px 70px 56px;
     display: grid;
     grid-template-columns: 163px 155px;
     background-color: $color-grey;
@@ -78,7 +78,7 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 19px;
   color: $color-dark-grey;
 }
 
