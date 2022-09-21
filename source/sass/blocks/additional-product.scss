@@ -206,12 +206,16 @@
 @media screen and (min-width: 768px) {
   .additional-product__container {
     margin: 0;
-    margin-top: 4px;
+    margin-top: 3px;
     display: grid;
     grid-template-columns: 223px 93px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+  }
+
+  .additional-product__container-next {
+    margin-bottom: 1px;
   }
 }
 
@@ -274,7 +278,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__toggle {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 21px;
     width: 100%;
   }
 }
