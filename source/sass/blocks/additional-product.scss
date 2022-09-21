@@ -79,7 +79,7 @@
 
 .additional-product__list-wrapper {
   margin: 0;
-  padding: 28px 20px 35px;
+  padding: 27px 20px 32px;
   position: relative;
 }
 
@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 1440px) {
   .additional-product__list-wrapper {
-    padding: 0 110px 86px;
+    padding: 0 110px 87px;
   }
 }
 
@@ -158,12 +158,27 @@
 }
 
 .additional-product__heading {
-  margin: 13px 0 12px;
+  margin: 11px 1px 13px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 15px;
   text-transform: uppercase;
   color: $color-special-dark-grey;
+}
+
+.additional-product__heading-index {
+  margin: 13px 1px 12px;
+  line-height: 17px;
+}
+
+.additional-product__heading-index-1 {
+  margin: 12px 1px 13px;
+  line-height: 15px;
+}
+
+.additional-product__heading-next {
+  margin: 12px 1px 13px;
+  line-height: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,8 +195,12 @@
   justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 15px;
   color: $color-dark-grey;
+}
+
+.additional-product__container-next {
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -194,12 +213,16 @@
     line-height: 20px;
     text-align: end;
   }
+
+  .additional-product__container-next {
+    margin-bottom: 1px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .additional-product__container {
     margin: 0;
-    margin-top: 3px;
+    margin-top: 6px;
     grid-template-columns: 180px 45px;
   }
 
@@ -235,6 +258,21 @@
     background-color: $color-green-hover;
     color: rgba($color: $color-white, $alpha: 0.3);
   }
+}
+
+.additional-product__toggle--first {
+  margin-bottom: 18px;
+  padding: 10px;
+}
+
+.additional-product__toggle--second {
+  margin-bottom: 19px;
+  padding: 9px;
+}
+
+.additional-product__toggle--third {
+  margin-bottom: 17px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,7 +316,7 @@
 .additional-product__index {
   margin: 0;
   margin-top: 34px;
-  height: 290px;
+  height: 289px;
   background-image: linear-gradient(
     rgba(104, 183, 56, 0.85),
     rgba(104, 183, 56, 0.85)),
@@ -299,7 +337,7 @@
 @media screen and (min-width: 768px) {
   .additional-product__index {
     max-height: 200px;
-    margin-top: 67px;
+    margin-top: 69px;
     display: flex;
     background-image: linear-gradient(
       rgba(104, 183, 56, 0.85),
@@ -372,7 +410,7 @@
   }
 
   .additional-product__gift-next {
-    margin: 0 40px 20px 267px;
+    margin: 0 40px 21px 267px;
     max-width: 161px;
     padding: 0;
     text-align: left;

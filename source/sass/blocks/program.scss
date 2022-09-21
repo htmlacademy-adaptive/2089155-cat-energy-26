@@ -35,8 +35,8 @@
 }
 
 .program__item {
-  margin-top: 21px;
-  padding: 29px 20px 20px;
+  margin-top: 20px;
+  padding: 29px 20px 19px;
   background-color: $color-grey;
 }
 
@@ -80,7 +80,7 @@
 .program__item--walking-cat {
   background-image: url("/img/cat_back-1.svg");
   background-repeat: no-repeat;
-  background-position: top 23px left 13px;
+  background-position: top 24px left 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,18 +120,18 @@
 @media screen and (min-width: 1440px) {
   .program__title {
     margin: 0;
-    margin-left: 23px;
+    margin-left: 75px;
     text-align: center;
   }
 
   .program__title--walking-cat {
-    margin-left: 63px;
+    margin-left: 95px;
   }
 }
 
 .program__description {
   font-family: "Arial", sans-serif;
-  margin: 28px 0 0;
+  margin: 30px 0 0;
   color: $color-dark-grey;
 }
 

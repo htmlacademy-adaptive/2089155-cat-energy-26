@@ -66,6 +66,26 @@
 }
 
 @media screen and (min-width: 768px) {
+  .site-navigation__item-catalog {
+    margin-left: -2px;
+  }
+
+  .site-navigation__item-product {
+    margin-left: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-navigation__item-catalog {
+    margin-left: 2px;
+  }
+
+  .site-navigation__item-product {
+    margin-left: -2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .site-navigation__item--current {
     position: relative;
 
