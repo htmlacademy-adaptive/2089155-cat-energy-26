@@ -1,38 +1,30 @@
 .main-header {
   margin: 0;
   display: flex;
-  padding: 10px 20px 17px;
 }
 
 @media screen and (min-width: 768px) {
   .main-header {
-    padding: 25px 30px;
+    padding: 20px 30px 33px 10px;
     justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .main-header {
-    padding: 52px 110px 10px;
+    padding: 48px 110px 20px 90px;
   }
 }
 
 .main-header-catalog {
+  position: relative;
   margin: 0;
   display: flex;
-  padding: 11px 20px 13px;
 }
 
 @media screen and (min-width: 768px) {
   .main-header-catalog {
-    padding: 25px 30px;
     justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .main-header-catalog {
-    padding: 52px 110px 10px;
   }
 }
 
@@ -74,6 +66,7 @@
 
 @media screen and (min-width: 768px) {
   .main-header__logo-icon {
+    margin-top: -4px;
     min-width: 174px;
   }
 }
@@ -88,14 +81,10 @@
   margin-top: 5px;
 }
 
-.main-nav {
-  position: relative;
-}
-
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: -7px;
+  top: 11px;
+  right: 11px;
   z-index: 2;
   display: block;
   width: 40px;
@@ -121,10 +110,6 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
@@ -133,8 +118,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 18px;
-    left: 15px;
+    top: 30px;
+    right: 19px;
     width: 26px;
     height: 2px;
     background-color: $color-black;

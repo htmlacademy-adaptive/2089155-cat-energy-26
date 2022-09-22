@@ -13,20 +13,22 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body class="page__body no-js">
   <header class="main-header main-header-catalog">
-    <a class="main-header__logo-link" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="/img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="/img/logo/logo-tablet.svg">
-        <img class="main-header__logo-icon"
-          src="/img/logo/logo-mobile.svg" width="34" height="38" alt="Кот.">
-      </picture>
-    </a>
-    <a class="main-header__logo-link main-header__logo-link--text" href="index.html">
-      <img class="main-header__logo-text" src="/img/logo/logo-cat-energy.svg"
-        width="101" height="18" alt="CAT ENERGY.">
+    <div class="main-header__logo-link-wrap">
+      <a class="main-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="/img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logo/logo-tablet.svg">
+          <img class="main-header__logo-icon"
+            src="/img/logo/logo-mobile.svg" width="34" height="38" alt="Кот.">
+        </picture>
       </a>
+      <a class="main-header__logo-link main-header__logo-link--text" href="index.html">
+        <img class="main-header__logo-text" src="/img/logo/logo-cat-energy.svg"
+          width="101" height="18" alt="CAT ENERGY.">
+      </a>
+    </div>
     <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
