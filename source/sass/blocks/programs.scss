@@ -1,14 +1,18 @@
+.programs__wrapper {
+  margin-top: -4px;
+}
+
 @media screen and (min-width: 768px) {
   .programs__wrapper {
     margin: 0;
-    padding: 35px 67px 0 69px;
+    padding: 9px 67px 0 69px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .programs__wrapper {
     margin: 0;
-    padding: 63px 110px 0;
+    padding: 33px 110px 0;
   }
 }
 

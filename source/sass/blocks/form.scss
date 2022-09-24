@@ -111,14 +111,14 @@
   }
 }
 
-.form__list {
+.form-list {
   margin: 0;
   padding: 19px 20px 10px;
   border-bottom: 1px solid $color-border-grey;
 }
 
 @media screen and (min-width: 768px) {
-  .form__list {
+  .form-list {
     margin: 0;
     margin-top: 71px;
     padding: 25px 28px 13px;
@@ -127,18 +127,18 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .form__list {
+  .form-list {
     margin-top: 20px;
     min-width: 511px;
     max-height: 196px;
   }
 }
 
-.form__item {
+.form-list__item {
   list-style-type: none;
 }
 
-.form__label-radio {
+.form-list__label-radio {
   position: relative;
   display: block;
   padding: 10px 0 15px 46px;
@@ -149,7 +149,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .form__label-radio {
+  .form-list__label-radio {
     padding: 7px 30px 15px 60px;
     font-size: 20px;
     line-height: 30px;
@@ -157,14 +157,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .form__label-radio {
+  .form-list__label-radio {
     padding: 7px 30px 15px 58px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-.form__mark {
+.form-list__mark {
   position: absolute;
   top: 4px;
   left: 0;
@@ -176,7 +176,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .form__mark {
+  .form-list__mark {
     width: 40px;
     height: 40px;
     top: 0;
@@ -184,12 +184,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .form__mark {
+  .form-list__mark {
     left: -3px;
   }
 }
 
-.form__input-radio[type="radio"]:checked + .form__mark::before {
+.form-list__input-radio[type="radio"]:checked + .form-list__mark::before {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -200,20 +200,20 @@
   content: "";
 }
 
-.form__input-radio:focus ~ .form__mark {
+.form-list__input-radio:focus ~ .form-list__mark {
   border: 1px solid $color-radio;
 }
 
-.form__input-radio:hover ~ .form__mark {
+.form-list__input-radio:hover ~ .form-list__mark {
   border: 1px solid $color-radio;
 }
 
-.form__input-radio:disabled ~ .form__mark {
+.form-list__input-radio:disabled ~ .form-list__mark {
   opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {
-  .form__input-radio[type="radio"]:checked + .form__mark::before {
+  .form-list__input-radio[type="radio"]:checked + .form-list__mark::before {
     top: 11px;
     left: 11px;
     width: 18px;

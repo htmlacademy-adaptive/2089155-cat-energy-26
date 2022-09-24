@@ -120,14 +120,14 @@
   }
 }
 
-.contacts__info-pin {
+.main-footer__contacts-pin {
   position: absolute;
   top: 52%;
   left: 40%;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts__info-pin {
+  .main-footer__contacts-pin {
     min-width: 113px;
     min-height: 106px;
     top: 50%;
@@ -136,13 +136,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .contacts__info-pin {
+  .main-footer__contacts-pin {
     top: 26%;
     left: 46%;
   }
 }
 
-.contacts__info-iframe {
+.main-footer__contacts-iframe {
   border: none;
   display: block;
   width: 100%;
@@ -150,7 +150,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contacts__info-iframe {
+  .main-footer__contacts-iframe {
     max-height: 400px;
   }
 }
